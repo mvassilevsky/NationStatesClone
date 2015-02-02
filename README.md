@@ -59,7 +59,7 @@ I will add more functionality to issues and nations, allowing issues to have
 more kinds of effects on a nation, the results of which will be shown in the
 nation overview page.
 
-[phase-one]: ./docs/phases/phase1.md
-[phase-two]: ./docs/phases/phase2.md
-[phase-three]: ./docs/phases/phase3.md
-[phase-four]: ./docs/phases/phase4.md
+[phase-1]: ./docs/phases/phase1.md
+[phase-2]: ./docs/phases/phase2.md
+[phase-3]: ./docs/phases/phase3.md
+[phase-4]: ./docs/phases/phase4.md
