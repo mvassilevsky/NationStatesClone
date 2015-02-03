@@ -4,7 +4,7 @@
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-title       | string    | not null
+name        | string    | not null
 ec_freedom  | integer   | not null
 soc_freedom | integer   | not null
 pol_freedom | integer   | not null
