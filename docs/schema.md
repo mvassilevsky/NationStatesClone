@@ -1,20 +1,20 @@
 # Schema Information
 
 ## nations
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-name        | string    | not null
-ec_freedom  | integer   | not null
-soc_freedom | integer   | not null
-pol_freedom | integer   | not null
-currency    | string    | not null
-animal      | string    | not null
-population  | integer   | not null
-leader_title| string    | not null
-motto       | string    |
-recent_issue| string    |
-flag_url    | string    |
+column name  | data type | details
+-------------|-----------|-----------------------
+id           | integer   | not null, primary key
+name         | string    | not null
+ec_freedom   | integer   | not null
+soc_freedom  | integer   | not null
+pol_freedom  | integer   | not null
+currency     | string    | not null
+animal       | string    | not null
+population   | integer   | not null
+leader_title | string    | not null
+motto        | string    |
+recent_issues| string    |
+flag_url     | string    |
 
 ## nation_issues
 column name | data type | details
