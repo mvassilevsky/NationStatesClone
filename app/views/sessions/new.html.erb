@@ -21,15 +21,15 @@
     The choice is yours.</p>
     <form action="/session" method="post">
       <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-      <label>NATION
+      <label>NATION<br>
         <input type="text" name="nation[name]" value=""><br>
       </label>
-      <label>PASSWORD
-        <input type="password" name="nation[password]" value="">
+      <label>PASSWORD<br>
+        <input type="password" name="nation[password]" value=""><br>
       </label>
       <input type="submit" value="Log In" class="log-in">
-    </form>
+    </form><br>
     <%= link_to "Create New Nation", new_nation_url %>
 </div>
 
-<p>Inspired by <a href="www.nationstates.net">NationStates</a>.</p>
+<p class="footer">Inspired by <a href="http://www.nationstates.net">NationStates</a>.</p>

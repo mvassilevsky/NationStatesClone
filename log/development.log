@@ -205,3 +205,2717 @@ Migrating to CreateNations (20150203213512)
   [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150203213512"]]
   [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 14:58:19 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1733ms (Views: 1705.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 14:58:21 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:08:51 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:17:58 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:17:59 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:51 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:18:57 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:43 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:44 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:49 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:19:51 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:13 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:40 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:43 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:20:52 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:21:01 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 86ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:49 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:26:54 -0800
+
+
+Started GET "/session/www.nationstates.net" for 127.0.0.1 at 2015-02-03 15:26:58 -0800
+
+ActionController::RoutingError (No route matches [GET] "/session/www.nationstates.net"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (56.8ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:09 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:27:51 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:02 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:12 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:16 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:19 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:29 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:37 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:39 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:28:46 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:32 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:34 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:44 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 91ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:35:56 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:02 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:04 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:17 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:28 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:36:51 -0800
+
+
+Started GET "/nations/new" for 127.0.0.1 at 2015-02-03 15:37:32 -0800
+Processing by NationsController#new as HTML
+Completed 500 Internal Server Error in 39ms
+
+ActionView::MissingTemplate (Missing template nations/new, application/new with {:locale=>[:en], :formats=>[:html, :xml], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/appacademy/Desktop/NationStatesClone/NationStatesClone/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__3430884778964062592__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/rack/agent_hooks.rb:26:in `traced_call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/rack/browser_monitoring.rb:23:in `traced_call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3632526183965139106__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started GET "/nations/new" for 127.0.0.1 at 2015-02-03 15:37:32 -0800
+Processing by NationsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template nations/new, application/new with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/appacademy/Desktop/NationStatesClone/NationStatesClone/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__3430884778964062592__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/rack/agent_hooks.rb:26:in `traced_call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/rack/browser_monitoring.rb:23:in `traced_call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3632526183965139106__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  newrelic_rpm (3.9.7.266) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:01 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 74ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:17 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:23 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:26 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:28 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:32 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:39:38 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:38 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:38 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:39 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:39:44 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 181ms (Views: 180.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:45 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:39:54 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:09 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 131ms (Views: 130.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:40:56 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:29 -0800
+
+
+Started GET "/session/new" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:41:42 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 15:43:05 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:43:05 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:43:05 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:43:05 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:43:05 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:05 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:06 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:06 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:06 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:06 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:06 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:06 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:06 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/nations.css?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/nation_states_clone.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/nations.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-03 15:43:08 -0800

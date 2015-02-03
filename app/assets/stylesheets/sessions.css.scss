@@ -1,3 +1,25 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#sidebar {
+  position: absolute;
+  left: 0px;
+  width: 160px;
+  top: 80px;
+}
+
+h1 {
+  position: absolute;
+  top: 0px;
+}
+
+#main {
+  margin: 80px 0 0 180px;
+}
+
+.footer {
+  margin: 0 0 0 180px;
+  position: absolute;
+  bottom: 5px;
+}
