@@ -160,3 +160,33 @@ PG::ConnectionBad (FATAL:  role "NationStatesClone" does not exist
   Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
   Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
   Rendered /Users/appacademy/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+  [1m[36m (18.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNations (20150203193655)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNations (20150203193655)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNations (20150203193655)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (7.0ms)[0m  [1mCREATE TABLE "nations" ("id" serial primary key, "name" character varying(255) NOT NULL, "ec_freedom" integer NOT NULL, "soc_freedom" integer NOT NULL, "pol_freedom" integer NOT NULL, "currency" character varying(255) NOT NULL, "animal" character varying(255) NOT NULL, "population" integer NOT NULL, "leader_title" character varying(255) NOT NULL, "motto" character varying(255), "recent_issues" character varying(255), "flag_url" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (14.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150203193655"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateNations (20150203193655)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (15.3ms)[0m  DROP TABLE "nations"
+  [1m[36mSQL (18.4ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20150203193655'[0m
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateNations (20150203193655)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (9.5ms)[0m  [1mCREATE TABLE "nations" ("id" serial primary key, "name" character varying(255) NOT NULL, "password_digest" character varying(255) NOT NULL, "session_token" character varying(255) NOT NULL, "ec_freedom" integer NOT NULL, "soc_freedom" integer NOT NULL, "pol_freedom" integer NOT NULL, "currency" character varying(255) NOT NULL, "animal" character varying(255) NOT NULL, "population" integer NOT NULL, "leader_title" character varying(255) NOT NULL, "motto" character varying(255), "recent_issues" character varying(255), "flag_url" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150203193655"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
