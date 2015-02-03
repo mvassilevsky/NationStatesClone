@@ -3,18 +3,20 @@
 ## nations
 column name  | data type | details
 -------------|-----------|-----------------------
-id           | integer   | not null, primary key
-name         | string    | not null
-ec_freedom   | integer   | not null
-soc_freedom  | integer   | not null
-pol_freedom  | integer   | not null
-currency     | string    | not null
-animal       | string    | not null
-population   | integer   | not null
-leader_title | string    | not null
-motto        | string    |
-recent_issues| string    |
-flag_url     | string    |
+id             | integer   | not null, primary key
+password_digest| string    | not null
+session_token  | string    | not null
+name           | string    | not null
+ec_freedom     | integer   | not null
+soc_freedom    | integer   | not null
+pol_freedom    | integer   | not null
+currency       | string    | not null
+animal         | string    | not null
+population     | integer   | not null
+leader_title   | string    | not null
+motto          | string    |
+recent_issues  | string    |
+flag_url       | string    |
 
 ## nation_issues
 column name | data type | details
