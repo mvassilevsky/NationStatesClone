@@ -1,0 +1,2 @@
+module NationsHelper
+end

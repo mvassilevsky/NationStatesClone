@@ -20,11 +20,10 @@
 #  updated_at      :datetime
 #
 
-class Nations < ActiveRecord::Base
-  validates: :title, uniqueness: true
-  validates: :session_token, presence: true
-  validates: :password, length: { minimum: 6, allow_nil: true }
+require 'test_helper'
 
-  attr_reader :password
-  after_initialize :ensure_session_token
+class NationTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
 end
