@@ -321,3 +321,20 @@
 [02/03/15 15:57:34 -0800 Apps-Mac-mini-3.local (7694)] ERROR : Unknown license key
 [02/03/15 15:57:34 -0800 Apps-Mac-mini-3.local (7694)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
 [02/03/15 16:17:00 -0800 Apps-Mac-mini-3.local (7694)] INFO : Starting Agent shutdown
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Starting the New Relic agent in "development" environment.
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] WARN : No configuration file found. Working directory = /Users/appacademy/Desktop/NationStatesClone/NationStatesClone
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] WARN : Looked in these locations (based on defaults): /Users/appacademy/Desktop/NationStatesClone/NationStatesClone/config/newrelic.yml, /Users/appacademy/Desktop/NationStatesClone/NationStatesClone/newrelic.yml, /Users/appacademy/Desktop/NationStatesClone/NationStatesClone/config/newrelic.yml, /Users/appacademy/Desktop/NationStatesClone/NationStatesClone/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Environment: development
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : No known dispatcher detected.
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Application: development
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Installing ActiveRecord 4 instrumentation
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Installing Net instrumentation
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Installing deferred Rack instrumentation
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Installing Rack::Builder middleware instrumentation
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Installing Rails 3+ middleware instrumentation
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Installing Rails 4 Controller instrumentation
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Installing Rails 4 view instrumentation
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Installing Rails 4 Error instrumentation
+[02/03/15 16:24:33 -0800 Apps-Mac-mini-3.local (8005)] INFO : Finished instrumentation
