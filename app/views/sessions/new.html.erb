@@ -9,9 +9,7 @@
     <label>PASSWORD
       <input type="password" name="nation[password]" value="">
     </label>
-
     <input type="submit" value="Log In" class="log-in">
-
   </form>
 </div>
 
@@ -19,17 +17,17 @@
   <p class="welcome-text">Welcome to NationStates, a nation simulation game.
     Here, you can create a utopia for your people, or condemn them to tyranny.
     The choice is yours.</p>
-    <form action="/session" method="post">
-      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-      <label>NATION<br>
-        <input type="text" name="nation[name]" value=""><br>
-      </label>
-      <label>PASSWORD<br>
-        <input type="password" name="nation[password]" value=""><br>
-      </label>
-      <input type="submit" value="Log In" class="log-in">
-    </form><br>
-    <%= link_to "Create New Nation", new_nation_url %>
+  <form action="/session" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label>NATION<br>
+      <input type="text" name="nation[name]" value=""><br>
+    </label>
+    <label>PASSWORD<br>
+      <input type="password" name="nation[password]" value=""><br>
+    </label>
+    <input type="submit" value="Log In" class="log-in">
+  </form><br>
+  <%= link_to "Create New Nation", new_nation_url %>
 </div>
 
 <p class="footer">Inspired by <a href="http://www.nationstates.net">NationStates</a>.</p>
