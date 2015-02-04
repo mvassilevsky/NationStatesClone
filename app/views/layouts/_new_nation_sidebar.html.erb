@@ -1,0 +1,12 @@
+<div id="sidebar">
+  <form action="<%= session_url %>" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label>NATION
+      <input type="text" name="nation[name]" value=""><br>
+    </label>
+    <label>PASSWORD
+      <input type="password" name="nation[password]" value="">
+    </label>
+    <input type="submit" value="Log In" class="log-in">
+  </form>
+</div>

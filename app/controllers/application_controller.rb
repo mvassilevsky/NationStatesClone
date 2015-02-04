@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   private
   def current_nation
-    @current_nation || Nation.find_by_session_token(sesssion[:session_token])
+    @current_nation ||= Nation.find_by_session_token(session[:session_token])
   end
 
   def signed_in?
@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
 
   def sign_in!(nation)
     @current_nation = nation
-    session[:token] = nation.reset_token!
+    session[:session_token] = nation.reset_token!
   end
 
   def sign_out

@@ -20,6 +20,6 @@ class NationsController < ApplicationController
     params.require(:nation).permit(:name, :password, :ec_freedom, :soc_freedom,
                                    :pol_freedom, :currency, :animal,
                                    :population, :leader_title, :motto,
-                                   :recent_issues, :flag_url)
+                                   :recent_issues, :flag_url, :tax_rate)
   end
 end

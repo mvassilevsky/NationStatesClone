@@ -1,18 +1,5 @@
 <h1>NationStates</h1>
 
-<div id="sidebar">
-  <form action="<%= session_url %>" method="post">
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <label>NATION
-      <input type="text" name="nation[name]" value=""><br>
-    </label>
-    <label>PASSWORD
-      <input type="password" name="nation[password]" value="">
-    </label>
-    <input type="submit" value="Log In" class="log-in">
-  </form>
-</div>
-
 <div id="main-new-nation">
   <form action="<%= nations_url %>" method="post">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
@@ -40,8 +27,13 @@
       <tr>
         <td>Motto:</td>
         <td>"</td>
-        <td><input type="text" name="nation[animal]" value=""></td>
+        <td><input type="text" name="nation[motto]" value=""></td>
         <td>"</td>
+      </tr>
+      <tr>
+        <td>Leader Title:</td>
+        <td></td>
+        <td><input type="text" name="nation[leader_title]" value=""></td>
       </tr>
     </table>
 

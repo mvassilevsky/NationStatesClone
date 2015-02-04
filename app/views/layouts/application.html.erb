@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>NationStatesClone</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>NationStatesClone</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-<%= yield %>
+    <% if signed_in? %>
+      <%= render "layouts/logged_in_sidebar" %>
+    <% elsif request.env['PATH_INFO'] == new_nation_path %>
+      <%= render "layouts/new_nation_sidebar" %>
+    <% else %>
+      <%= render "layouts/login_sidebar" %>
+    <% end %>
 
-</body>
+    <%= render "layouts/errors" %>
+
+    <%= yield %>
+
+  </body>
 </html>
