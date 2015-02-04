@@ -8,7 +8,15 @@
   width: 160px;
   top: 52px;
   height: 100%;
+  color: green;
   background-color: #EEEEE0;
+  font-size: 12px;
+}
+
+#sidebar a {
+  font-size: 14px;
+  color: green;
+  text-decoration: none;
 }
 
 h1 {
@@ -24,7 +32,7 @@ h1 {
   text-align: center;
 }
 
-#main {
+#main-session {
   margin-left: 180px;
   margin-top: 70px;
   font-size: 20px;
