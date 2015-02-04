@@ -16,6 +16,34 @@
 <div id="main-new-nation">
   <form action="<%= nations_url %>" method="post">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <p class="new-nation">New Nation</p>
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td></td>
+        <td><input type="text" name="nation[name]" value=""></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td></td>
+        <td><input type="password" name="nation[password]" value=""></td>
+      </tr>
+      <tr>
+        <td>Currency:</td>
+        <td>The</td>
+        <td><input type="text" name="nation[currency]" value=""></td>
+      </tr>
+      <tr>
+        <td>National Animal:</td>
+        <td>The</td>
+        <td><input type="text" name="nation[animal]" value=""></td>
+      </tr>
+      <tr>
+        <td>Motto:</td>
+        <td>"</td>
+        <td><input type="text" name="nation[animal]" value=""></td>
+        <td>"</td>
+      </tr>
+    </table>
+
   </form>
 </div>
