@@ -16,9 +16,9 @@
       <%= render "layouts/login_sidebar" %>
     <% end %>
 
-    <%= render "layouts/errors" %>
-
     <%= yield %>
+
+    <p class="errors"><%= render "layouts/errors" %></p>
 
   </body>
 </html>
