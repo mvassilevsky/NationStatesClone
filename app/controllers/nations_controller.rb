@@ -6,12 +6,13 @@ class NationsController < ApplicationController
   end
 
   def create
+    population = 1000000
+    population_paramters = { :population => population }
+    nation_parameters = nation_params
     ideology_stats = IdeologyParser.new(ideology_params).parse
-    p nation_params
-    p ideology_stats
-    nation_params.merge!(ideology_stats)
-    p nation_params
-    @nation = Nation.new(nation_params)
+    nation_parameters.merge!(ideology_stats)
+    nation_parameters.merge!(population_paramters)
+    @nation = Nation.new(nation_parameters)
     @questions = IdeologyParser.questions
     if @nation.save
       sign_in!(@nation)
