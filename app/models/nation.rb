@@ -80,9 +80,9 @@ class Nation < ActiveRecord::Base
     elsif soc_freedom >= 33 && soc_freedom < 66
       if ec_freedom >= 0 && ec_freedom < 33
         if pol_freedom >= 0 && pol_freedom < 33
-          return "Left-Wing Dictatorship"
+          return "Left-Wing Autocracy"
         elsif pol_freedom >= 33 && pol_freedom < 66
-          return "Democratic Socialism"
+          return "Bureaucratic Socialism"
         else
           return "Ultra-Electoral Socialism"
         end
@@ -98,7 +98,7 @@ class Nation < ActiveRecord::Base
         if pol_freedom >= 0 && pol_freedom < 33
           return "Neocameralist State"
         elsif pol_freedom >= 33 && pol_freedom < 66
-          return "Capitalist Democracy"
+          return "Free-Market Bureaucracy"
         else
           return "Market Democracy"
         end
@@ -106,9 +106,9 @@ class Nation < ActiveRecord::Base
     else
       if ec_freedom >= 0 && ec_freedom < 33
         if pol_freedom >= 0 && pol_freedom < 33
-          return "Liberal Socialist Dictatorship"
+          return "Liberal Socialist Autocracy"
         elsif pol_freedom >= 33 && pol_freedom < 66
-          return "Liberal Socialist Democracy"
+          return "Liberal Socialism"
         else
           return "Left-Wing Utopia"
         end

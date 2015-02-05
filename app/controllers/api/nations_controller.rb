@@ -1,7 +1,12 @@
 module Api
-  def NationsController < ApplicationController
+  class NationsController < ApplicationController
     def show
-      
+      @nation = Nation.find(params[:id])
+      if @nation
+        render :show
+      else
+        render json: ["Nation not found"], status: 404
+      end
     end
 
     private
