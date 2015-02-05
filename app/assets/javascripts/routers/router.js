@@ -1,13 +1,20 @@
 NationStatesClone.Routers.Router = Backbone.Router.extend({
   initialize: function () {
-    this.$rootEl = $('#main')
+    this.$rootEl = $('#main');
+    if (NationStatesClone.CURRENT_NATION) {
+      this.model = NationStatesClone.Collections.nations.getOrFetch(
+          NationStatesClone.CURRENT_NATION
+        )
+      debugger;
+    }
   },
 
   routes: {
-    '': 'index'
+    '': 'showLoggedInNation'
   },
 
-  index: function () {
-    //if NationStatesClone.CURRENT_USER
+  showLoggedInNation: function () {
+    if (NationStatesClone.CURRENT_NATION) {
+    }
   }
 });

@@ -7,6 +7,7 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+    <h1>NationStates</h1>
     <div id="main">
       <% if signed_in? %>
         <%= render "layouts/logged_in_sidebar" %>
@@ -25,7 +26,7 @@
 </html>
 
 <script>
-  <% if !!defined?(current_nation.name) %>
-    NationStatesClone.CURRENT_NATION = { nation: "<%= current_nation.name %>" };
+  <% if !!defined?(current_nation.id) %>
+    NationStatesClone.CURRENT_NATION = { nation: "<%= current_nation.id %>" };
   <% end %>
 </script>

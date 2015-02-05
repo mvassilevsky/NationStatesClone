@@ -4,4 +4,8 @@ NationStatesClone::Application.routes.draw do
   resources :nations, only: [:new, :create]
   resource :session, only: [:new, :create, :destroy]
 
+  namespace :api, defaults: { format: :json } do
+    resources :nations
+  end
+
 end
