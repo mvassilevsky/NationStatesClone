@@ -1,0 +1,17 @@
+<tr>
+  <td colspan= "4" class="question">
+    <%= text %>
+  </td>
+</tr>
+<tr class='agreement'>
+  <td class='opt-text'><label for='<%= question_num %>sd'>Strongly Disagree</label></td>
+  <td class='opt-text'><label for='<%= question_num %>d'>Disagree</label></td>
+  <td class='opt-text'><label for='<%= question_num %>a'>Agree</label></td>
+  <td class='opt-text'><label for='<%= question_num %>sa'>Strongly Agree</label></td>
+</tr>
+<tr>
+  <td><input type='radio' name='ideology[q<%= question_num %>]' value='0' id='<%= question_num %>sd'></td>
+  <td><input type='radio' name='ideology[q<%= question_num %>]' value='1' id='<%= question_num %>d'></td>
+  <td><input type='radio' name='ideology[q<%= question_num %>]' value='2' id='<%= question_num %>a'></td>
+  <td><input type='radio' name='ideology[q<%= question_num %>]' value='3' id='<%= question_num %>sa'></td>
+</tr>

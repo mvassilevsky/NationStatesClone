@@ -27,8 +27,8 @@ Rails and Backbone. Users will be able to:
 ### Phase 1: Authentication and Nation Creation (~1-2 days)
 I will add nation (user) authentication in Rails, so users will be able to
 log in. They will also be able to register by creating a new nation. The app
-will also be pushed to Heroku in this phase. I will also add a sidebar once
-the user is logged in.
+will also be pushed to Heroku in this phase. I will also add a sidebar with
+which the user can log in.
 
 [Details][phase-1]
 

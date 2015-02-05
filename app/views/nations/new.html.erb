@@ -7,35 +7,43 @@
       <tr>
         <td>Name:</td>
         <td></td>
-        <td><input type="text" name="nation[name]" value=""></td>
+        <td><input type="text" name="nation[name]"></td>
       </tr>
       <tr>
         <td>Password:</td>
         <td></td>
-        <td><input type="password" name="nation[password]" value=""></td>
+        <td><input type="password" name="nation[password]"></td>
       </tr>
       <tr>
         <td>Currency:</td>
         <td>The</td>
-        <td><input type="text" name="nation[currency]" value=""></td>
+        <td><input type="text" name="nation[currency]"></td>
       </tr>
       <tr>
         <td>National Animal:</td>
         <td>The</td>
-        <td><input type="text" name="nation[animal]" value=""></td>
+        <td><input type="text" name="nation[animal]"></td>
       </tr>
       <tr>
         <td>Motto:</td>
         <td>"</td>
-        <td><input type="text" name="nation[motto]" value=""></td>
+        <td><input type="text" name="nation[motto]"></td>
         <td>"</td>
       </tr>
       <tr>
         <td>Leader Title:</td>
         <td></td>
-        <td><input type="text" name="nation[leader_title]" value=""></td>
+        <td><input type="text" name="nation[leader_title]"></td>
       </tr>
     </table>
 
+    <p>Ideology Analysis:</p>
+    <table class="ideology-questions">
+      <% @questions.each_with_index do |question_txt, idx| %>
+        <%= render partial: "nations/question", locals: { text: question_txt, question_num: idx + 1 } %>
+      <% end %>
+    </table>
+
+    <input type="submit" value="Create Nation" class="create-nation">
   </form>
 </div>

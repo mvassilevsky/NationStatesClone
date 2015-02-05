@@ -22,7 +22,7 @@
 #
 
 class Nation < ActiveRecord::Base
-  validates :title, uniqueness: true
+  validates :name, uniqueness: true
   validates :session_token, presence: true
   validates :password, length: { minimum: 6, allow_nil: true }
 
@@ -48,6 +48,88 @@ class Nation < ActiveRecord::Base
     self.session_token = SecureRandom.urlsafe_base64(16)
     self.save!
     self.session_token
+  end
+
+  def government_type
+    if soc_freedom >= 0 && soc_freedom < 33
+      if ec_freedom >= 0 && ec_freedom < 33
+        if pol_freedom >= 0 && pol_freedom < 33
+          return "Absolute Tyranny"
+        elsif pol_freedom >= 33 && pol_freedom < 66
+          return "Authoritarian Democracy"
+        else
+          return "Tyranny by Majority"
+        end
+      elsif ec_freedom >= 33 && ec_freedom < 66
+        if pol_freedom >= 0 && pol_freedom < 33
+          return "Fascist Tyranny"
+        elsif pol_freedom >= 33 && pol_freedom < 66
+          return "Reactionary Democracy"
+        else
+          return "Conservative Democracy"
+        end
+      else
+        if pol_freedom >= 0 && pol_freedom < 33
+          return "Corporate Police State"
+        elsif pol_freedom >= 33 && pol_freedom < 66
+          return "Right-Wing Utopia"
+        else
+          return "Corporatist Democracy"
+        end
+      end
+    elsif soc_freedom >= 33 && soc_freedom < 66
+      if ec_freedom >= 0 && ec_freedom < 33
+        if pol_freedom >= 0 && pol_freedom < 33
+          return "Left-Wing Dictatorship"
+        elsif pol_freedom >= 33 && pol_freedom < 66
+          return "Democratic Socialism"
+        else
+          return "Ultra-Electoral Socialism"
+        end
+      elsif ec_freedom >= 33 && ec_freedom < 66
+        if pol_freedom >= 0 && pol_freedom < 33
+          return "Paternalistic Dictatorship"
+        elsif pol_freedom >= 33 && pol_freedom < 66
+          return "Centrist Democracy"
+        else
+          return "Ultra-Electoral State"
+        end
+      else
+        if pol_freedom >= 0 && pol_freedom < 33
+          return "Neocameralist State"
+        elsif pol_freedom >= 33 && pol_freedom < 66
+          return "Capitalist Democracy"
+        else
+          return "Market Democracy"
+        end
+      end
+    else
+      if ec_freedom >= 0 && ec_freedom < 33
+        if pol_freedom >= 0 && pol_freedom < 33
+          return "Liberal Socialist Dictatorship"
+        elsif pol_freedom >= 33 && pol_freedom < 66
+          return "Liberal Socialist Democracy"
+        else
+          return "Left-Wing Utopia"
+        end
+      elsif ec_freedom >= 33 && ec_freedom < 66
+        if pol_freedom >= 0 && pol_freedom < 33
+          return "Permissive Dictatorship"
+        elsif pol_freedom >= 33 && pol_freedom < 66
+          return "Progressive Welfare State"
+        else
+          return "Individualist Progressive State"
+        end
+      else
+        if pol_freedom >= 0 && pol_freedom < 33
+          return "Libertarian Dictatorship"
+        elsif pol_freedom >= 33 && pol_freedom < 66
+          return "Democratic Night-Watchman State"
+        else
+          return "Anarchy"
+        end
+      end
+    end
   end
 
   private
