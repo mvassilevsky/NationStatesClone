@@ -4,6 +4,8 @@ window.NationStatesClone = {
   Views: {},
   Routers: {},
   initialize: function() {
+    new NationStatesClone.Routers.Router();
+    Backbone.history.start();
   }
 };
 

@@ -2,23 +2,28 @@
 <html>
   <head>
     <title>NationStatesClone</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
   <body>
+    <div id="main">
+      <% if signed_in? %>
+        <%= render "layouts/logged_in_sidebar" %>
+      <% elsif request.env['PATH_INFO'] == new_nation_path %>
+        <%= render "layouts/new_nation_sidebar" %>
+      <% else %>
+        <%= render "layouts/login_sidebar" %>
+      <% end %>
 
-    <% if signed_in? %>
-      <%= render "layouts/logged_in_sidebar" %>
-    <% elsif request.env['PATH_INFO'] == new_nation_path %>
-      <%= render "layouts/new_nation_sidebar" %>
-    <% else %>
-      <%= render "layouts/login_sidebar" %>
-    <% end %>
+      <%= yield %>
 
-    <%= yield %>
-
-    <p class="errors"><%= render "layouts/errors" %></p>
+      <p class="errors"><%= render "layouts/errors" %></p>
+    </div>
 
   </body>
 </html>
+
+<script>
+  NationStatesClone.CURRENT_NATION = { nation: "<%= current_nation.name %>" };
+</script>
