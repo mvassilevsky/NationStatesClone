@@ -4,6 +4,10 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
   },
 
   routes: {
+    '': 'index'
+  },
 
+  index: function () {
+    //if NationStatesClone.CURRENT_USER
   }
 });

@@ -25,5 +25,7 @@
 </html>
 
 <script>
-  NationStatesClone.CURRENT_NATION = { nation: "<%= current_nation.name %>" };
+  <% if !!defined?(current_nation.name) %>
+    NationStatesClone.CURRENT_NATION = { nation: "<%= current_nation.name %>" };
+  <% end %>
 </script>
