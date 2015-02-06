@@ -19,6 +19,7 @@
 #  created_at      :datetime
 #  updated_at      :datetime
 #  tax_rate        :integer          not null
+#  environment     :integer
 #
 
 class Nation < ActiveRecord::Base
@@ -205,6 +206,118 @@ class Nation < ActiveRecord::Base
     when 90..100
       "World Benchmark"
     end
+  end
+
+  def size_description
+    case population
+    when 1000000...5000000
+      "tiny"
+    when 5000000...10000000
+      "small"
+    when 10000000...50000000
+      "moderately-sized"
+    when 50000000...100000000
+      "large"
+    when 100000000...500000000
+      "huge"
+    when 500000000...1000000000
+      "gargantuan"
+    else
+      "colossal"
+    end
+  end
+
+  def population_str
+    if population >= 1000000000000
+      return (population / 1000000000000.to_f).to_s[0..3] + " trillion"
+    elsif population >= 1000000000
+      return (population / 1000000000.to_f).to_s[0..3] + " billion"
+    else
+      return (population / 1000000.to_f).to_s[0..3] + " million"
+    end
+  end
+
+  def gov_type_description
+    case gov_type
+    when "Absolute Tyranny"
+      "are ruled without fear or favor by a psychotic dictator, who outlaws" +
+      " just about everything and refers to the populace as 'my little" +
+      " playthings'"
+    when "Authoritarian Democracy"
+      "are prohibited from doing almost everything except voting, which they" +
+      " do timidly and conservatively"
+    when "Tyranny by Majority"
+      "enjoy frequent elections, where the majority of the populace" +
+      " regularly votes to increase its benefits at the expense of various" +
+      " helpless minorities"
+    when "Fascist Tyranny"
+      "are managed by an oppressive government, which aims for the good of" +
+      " the nation at the exclusion of the welfare of the individual"
+    when "Reactionary Democracy"
+      "are highly moralistic and fiercely conservative, in the sense that" +
+      " they tend to believe most things should be outlawed. People who have" +
+      " good jobs and work quietly at them are lauded; others are viewed with" +
+      " suspicion"
+    when "Conservative Democracy"
+      "are known throughout the region for their efficiency and work ethic," +
+      " as well as their general suspicion of leisure"
+    when "Corporate Police State"
+    when "Right-Wing Utopia"
+    when "Corporatist Democracy"
+    when "Left-Wing Autocracy"
+    when "Bureaucratic Socialism"
+    when "Ultra-Electoral Socialism"
+    when "Paternalistic Dictatorship"
+    when "Centrist Democracy"
+    when "Ultra-Electoral State"
+    when "Neocameralist State"
+    when "Free-Market Bureaucracy"
+    when "Market Democracy"
+    when "Liberal Socialist Autocracy"
+    when "Liberal Socialism"
+    when "Left-Wing Utopia"
+    when "Permissive Dictatorship"
+    when "Progressive Welfare State"
+    when "Individualist Progressive State"
+    when "Libertarian Dictatorship"
+    when "Democratic Night-Watchman State"
+    when "Anarchy"
+    end
+  end
+
+
+  def animal_environment
+    case environment
+    when 0...10
+      "which is completely extinct, unable to survive in the blighted environment"
+    when 10...20
+      "which is on the brink of extinction, learning to swim through industrial sludge"
+    when 20...30
+      "which is mainly found in zoos, the polluted environment being hostile to it"
+    when 30...40
+      "which is also the nation's main course"
+    when 40...50
+      "which invites concern due to the destruction of its habitat"
+    when 50...60
+      "whose population is below historical norms due to a worsened environment"
+    when 60...70
+      "which is moderately abundant and is of little environmental concern"
+    when 70...80
+      "which frolics freely in the nation's numerous forests"
+    when 80...90
+      "which is a common sight in the countryside"
+    when 90..100
+      "which is so common, some consider it a pest"
+    end
+  end
+
+  def description
+    paragraph1 = name + " is a " + size_description + " nation. Its " + \
+                 population_str + " people " + gov_type_descrption + "."
+    paragraph2 = "Its currency is the " + currency + \
+                 " and its national animal is the " + national_animal + \
+                 " ," + animal_environment + "." #issues will also go here
+    [paragraph1, paragraph2]
   end
 
   private

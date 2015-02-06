@@ -15,6 +15,7 @@ animal         | string    | not null
 population     | integer   | not null
 leader_title   | string    | not null
 tax_rate       | integer   | not null
+environment    | integer   |
 motto          | string    |
 recent_issues  | string    |
 flag_url       | string    |

@@ -19,6 +19,7 @@
 #  created_at      :datetime
 #  updated_at      :datetime
 #  tax_rate        :integer          not null
+#  environment     :integer
 #
 
 require 'test_helper'
