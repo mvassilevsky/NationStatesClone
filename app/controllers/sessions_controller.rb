@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     )
 
     if nation
-      sign_in(nation)
+      sign_in!(nation)
       redirect_to root_url
     else
       flash.now[:errors] = ["Nonexistent nation or incorrect password"]

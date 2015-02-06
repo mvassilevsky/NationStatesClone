@@ -11,12 +11,17 @@
   color: green;
   background-color: #EEEEE0;
   font-size: 12px;
+  word-wrap: break-word;
 }
 
 #sidebar a {
-  font-size: 14px;
+  font-size: 15px;
   color: green;
   text-decoration: none;
+}
+
+#sidebar strong a {
+  font-size: 24px;
 }
 
 h1 {

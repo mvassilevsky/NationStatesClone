@@ -9,6 +9,11 @@ module Api
       end
     end
 
+    def destroy
+      sign_out
+      redirect_to new_session_url
+    end
+
     private
     def nation_params
       params.require(:nation).permit(:name, :password, :currency, :animal,
