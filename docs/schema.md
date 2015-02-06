@@ -1,12 +1,12 @@
 # Schema Information
 
 ## nations
-column name  | data type | details
--------------|-----------|-----------------------
+column name    | data type | details
+---------------|-----------|-----------------------
 id             | integer   | not null, primary key
 password_digest| string    | not null
 session_token  | string    | not null
-name           | string    | not null
+name           | string    | not null, unique
 ec_freedom     | integer   | not null
 soc_freedom    | integer   | not null
 pol_freedom    | integer   | not null
@@ -38,9 +38,11 @@ body        | string    | not null
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-issue_id    | integer   | not null, foreign key
-body        | string    | not null, unique
+issue_id    | integer   | not null, foreign key (references issues)
+body        | string    | not null
 ec_freedom  | integer   | not null
 soc_freedom | integer   | not null
 pol_freedom | integer   | not null
+tax_rate    | integer   | not null
+ecosystem   | integer   | not null
 result_txt  | string    | not null

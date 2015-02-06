@@ -26,6 +26,29 @@ class Nation < ActiveRecord::Base
   validates :name, uniqueness: true
   validates :session_token, presence: true
   validates :password, length: { minimum: 6, allow_nil: true }
+  validates(
+    :name,
+    :password_digest,
+    :session_token,
+    :ec_freedom,
+    :soc_freedom,
+    :pol_freedom,
+    :currency,
+    :animal,
+    :population,
+    :leader_title,
+    :tax_rate,
+    :ecosystem,
+    presence: true
+  )
+
+  has_many(
+    :nation_issues,
+    class_name: "NationIssue",
+    foreign_key: :nation_id
+  )
+
+  has_many :issues, through: :nation_issues
 
   attr_reader :password
   after_initialize :ensure_session_token
