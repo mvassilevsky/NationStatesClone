@@ -50,7 +50,7 @@ class Nation < ActiveRecord::Base
     self.session_token
   end
 
-  def government_type
+  def gov_type
     if soc_freedom >= 0 && soc_freedom < 33
       if ec_freedom >= 0 && ec_freedom < 33
         if pol_freedom >= 0 && pol_freedom < 33
@@ -129,6 +129,81 @@ class Nation < ActiveRecord::Base
           return "Anarchy"
         end
       end
+    end
+  end
+
+  def individual_liberty
+    case soc_freedom
+    when 0...10
+      "Ultra-Repressive"
+    when 10...20
+      "Reactionary"
+    when 20...30
+      "Traditionalist"
+    when 30...40
+      "Conservative"
+    when 40...50
+      "Group-Oriented"
+    when 50...60
+      "Moderate"
+    when 60...70
+      "Respected"
+    when 70...80
+      "Permissive"
+    when 80...90
+      "Individualist"
+    when 90..100
+      "Anarchic"
+    end
+  end
+
+  def economy
+    case ec_freedom
+    when 0...10
+      "Entirely Centralized"
+    when 10...20
+      "Command-and-Control"
+    when 20...30
+      "Centrally Planned"
+    when 30...40
+      "Industrial Policy"
+    when 40...50
+      "Statist"
+    when 50...60
+      "Average"
+    when 60...70
+      "Social Market"
+    when 70...80
+      "Liberal"
+    when 80...90
+      "Laissez-Faire"
+    when 90..100
+      "Market Anarchist"
+    end
+  end
+
+  def political_freedom
+    case pol_freedom
+    when 0...10
+      "Nonexistent"
+    when 10...20
+      "Struggling"
+    when 20...30
+      "Weak"
+    when 30...40
+      "Some"
+    when 40...50
+      "Below Average"
+    when 50...60
+      "Average"
+    when 60...70
+      "Above Average"
+    when 70...80
+      "Good"
+    when 80...90
+      "Strong"
+    when 90..100
+      "World Benchmark"
     end
   end
 

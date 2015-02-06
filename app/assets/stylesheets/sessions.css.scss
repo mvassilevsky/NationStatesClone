@@ -49,6 +49,31 @@ h2.name {
   text-align: center;
 }
 
+h3.motto {
+  text-align: center;
+}
+
+.summary {
+  border-radius: 5px;
+  background-color: #EAEAE0;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 5px #000;
+  border-spacing: 10px;
+  border: 4px solid gray;
+}
+
+.summary td {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.stat {
+  text-align: center;
+  width: 33%;
+}
+
 .footer {
   margin: 0 0 0 180px;
   position: absolute;

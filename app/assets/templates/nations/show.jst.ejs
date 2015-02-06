@@ -4,4 +4,27 @@
 
 <div id="nation">
   <h2 class="name"><%= nation.get('name') %></h2>
+  <h3 class="motto">"<%= nation.get('motto') %>"</h3>
+  <table class="summary">
+    <tr>
+      <td colspan="3" align="center">
+        <strong>Category:</strong>
+        <%= nation.get("gov_type") %>
+      </td>
+    </tr>
+    <tr>
+      <td class="stat">
+        <strong>Individual Liberty:</strong><br>
+        <%= nation.get("individual_liberty") %>
+      </td>
+      <td class="stat">
+        <strong>Economy:</strong><br>
+        <%= nation.get("economy") %>
+      </td>
+      <td class="stat">
+        <strong>Political Freedom:</strong><br>
+        <%= nation.get("political_freedom") %>
+      </td>
+    </tr>
+  </table>
 </div>
