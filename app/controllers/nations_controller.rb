@@ -7,11 +7,12 @@ class NationsController < ApplicationController
 
   def create
     population = 1000000
-    population_paramters = { :population => population }
+    environment = 50
+    beginning_parameters = {population: population, environment: environment}
     nation_parameters = nation_params
     ideology_stats = IdeologyParser.new(ideology_params).parse
     nation_parameters.merge!(ideology_stats)
-    nation_parameters.merge!(population_paramters)
+    nation_parameters.merge!(beginning_parameters)
     @nation = Nation.new(nation_parameters)
     @questions = IdeologyParser.questions
     if @nation.save

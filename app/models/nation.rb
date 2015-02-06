@@ -363,7 +363,8 @@ class Nation < ActiveRecord::Base
     when 40...50
       "which invites concern due to the destruction of its habitat"
     when 50...60
-      "whose population is below historical norms due to a worsened environment"
+      "whose population is below historical norms because of bad" +
+      " environmental conditions"
     when 60...70
       "which is moderately abundant and is of little environmental concern"
     when 70...80
@@ -371,16 +372,16 @@ class Nation < ActiveRecord::Base
     when 80...90
       "which is a common sight in the countryside"
     when 90..100
-      "which is so common, some consider it a pest"
+      "which is so common that some consider it a pest"
     end
   end
 
   def description
     paragraph1 = name + " is a " + size_description + " nation. Its " + \
-                 population_str + " people " + gov_type_descrption + "."
+                 population_str + " people " + gov_type_description + "."
     paragraph2 = "Its currency is the " + currency + \
-                 " and its national animal is the " + national_animal + \
-                 " ," + animal_environment + "." #issues will also go here
+                 " and its national animal is the " + animal + ", " + \
+                 animal_environment + "." #issues will also go here
     [paragraph1, paragraph2]
   end
 
