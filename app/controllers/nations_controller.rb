@@ -7,8 +7,8 @@ class NationsController < ApplicationController
 
   def create
     population = 1000000
-    environment = 50
-    beginning_parameters = {population: population, environment: environment}
+    ecosystem = 50
+    beginning_parameters = {population: population, ecosystem: ecosystem}
     nation_parameters = nation_params
     ideology_stats = IdeologyParser.new(ideology_params).parse
     nation_parameters.merge!(ideology_stats)

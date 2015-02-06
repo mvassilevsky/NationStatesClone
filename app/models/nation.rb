@@ -19,7 +19,7 @@
 #  created_at      :datetime
 #  updated_at      :datetime
 #  tax_rate        :integer          not null
-#  environment     :integer          not null
+#  ecosystem       :integer          not null
 #
 
 class Nation < ActiveRecord::Base
@@ -351,7 +351,7 @@ class Nation < ActiveRecord::Base
 
 
   def animal_environment
-    case environment
+    case ecosystem
     when 0...10
       "which is completely extinct, unable to survive in the blighted environment"
     when 10...20
