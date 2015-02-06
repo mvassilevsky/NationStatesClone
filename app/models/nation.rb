@@ -19,7 +19,7 @@
 #  created_at      :datetime
 #  updated_at      :datetime
 #  tax_rate        :integer          not null
-#  environment     :integer
+#  environment     :integer          not null
 #
 
 class Nation < ActiveRecord::Base
