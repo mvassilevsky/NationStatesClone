@@ -305,9 +305,16 @@ class Nation < ActiveRecord::Base
     when "Neocameralist State"
       "are ruled by a state that operates like a business, which leaves" +
       " commerce largely unregulated but stamps out all talk of elections"
-    when "Market Democracy"
+    when "Free-Market Bureaucracy"
       "are either ruled by a small, efficient government or a conglomerate of" +
       " multinational corporations; it's difficult to tell which"
+    when "Market Democracy"
+      "are effectively ruled by a group of massive corporations, who run for" +
+      " political office and provide their well-off citizens with world-class" +
+      " goods and services. Their poorer citizens, however, are mostly" +
+      " starving to death while being urged to go out and get real jobs. The" +
+      " populace has reasonably extensive civil rights, although these are" +
+      " mostly aimed at allowing them to buy whatever they like"
     when "Liberal Socialist Autocracy"
       "are ruled with an iron fist by the socialist government, which grants" +
       " its people the freedom to do whatever they like so long as it doesn't" +
