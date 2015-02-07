@@ -1,10 +1,13 @@
+<% var nationName = nation.get('name') %>
+
 <div id="sidebar">
-  <strong><a href=""><%= nation.get('name') %></a></strong><br>
+  <strong><a href=""><%= nationName %></a></strong><br>
   <a href="" class="logout">Log Out</a>
 </div>
 
 <div id="issues">
-  <h2>Issues</h2>
+  <h2 class="issue-header"><%= nationName %> Decides!</h2>
+  <p>The following issues confront <%= nationName %>:</p>
   <ul class="issue-list">
     <% issues.each(function (issue) { %>
       <li><%= issue.get('title') %></li>
