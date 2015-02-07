@@ -386,7 +386,7 @@ class Nation < ActiveRecord::Base
     when 40...50
       "which invites concern due to the destruction of its habitat"
     when 50...60
-      "whose population is below historical norms because of bad" +
+      "whose population is below historical levels because of bad" +
       " environmental conditions"
     when 60...70
       "which is moderately abundant and is of little environmental concern"

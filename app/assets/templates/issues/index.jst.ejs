@@ -1,0 +1,13 @@
+<div id="sidebar">
+  <strong><a href=""><%= nation.get('name') %></a></strong><br>
+  <a href="" class="logout">Log Out</a>
+</div>
+
+<div id="issues">
+  <h2>Issues</h2>
+  <ul class="issue-list">
+    <% issues.each(function (issue) { %>
+      <li><%= issue.get('title') %></li>
+    <% }) %>
+  </ul>
+</div>

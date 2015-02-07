@@ -1,18 +1,19 @@
-NationStatesClone.Views.NationShow = Backbone.View.extend({
-  template: JST['nations/show'],
+NationStatesClone.Views.IssuesIndex = Backbone.View.extend({
+  template: JST['issues/index'],
 
   events: {
     "click .logout": "logout"
   },
 
   initialize: function () {
-    this.listenTo(this.model, 'sync', this.render);
+    this.listenTo(this.collection, "sync", this.render);
+    this.listenTo(this.model, "sync", this.render)
   },
 
   render: function () {
     var content = this.template({
-      nation: this.model,
-      issues: this.collection
+      issues: this.collection,
+      nation: this.model
     });
     this.$el.html(content);
     return this;
@@ -25,5 +26,4 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
       method: "DELETE"
     });
   }
-
 });
