@@ -402,7 +402,8 @@ class Nation < ActiveRecord::Base
   def description
     paragraph1 = name + " is a " + size_description + " nation, ruled by its " +
                  "powerful " + leader_title + ". Its " + population_str + \
-                 " people " + gov_type_description + "."
+                 " people " + gov_type_description + ". They pay an average" +
+                 " income tax of " + tax_rate.to_s + "."
     paragraph2 = "Its currency is the " + currency + \
                  " and its national animal is the " + animal + ", " + \
                  animal_environment + "." #issues will also go here
