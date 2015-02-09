@@ -59,6 +59,23 @@ class Nation < ActiveRecord::Base
     nation
   end
 
+  def initialize(nation_parameters)
+    adjust_params!(nation_parameters)
+    super(nation_parameters)
+  end
+
+  def adjust_params!(nation_parameters)
+    limited_params = [:ec_freedom, :soc_freedom, :pol_freedom, :tax_rate, :ecosystem]
+    limited_params.each do |param|
+      if nation_parameters[param] > 100
+        nation_parameters[param] = 100
+      elsif nation_parameters[param] < 0
+        nation_parameters[param] = 0
+      end
+    end
+    nation_parameters
+  end
+
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)
@@ -400,13 +417,14 @@ class Nation < ActiveRecord::Base
   end
 
   def description
-    paragraph1 = name + " is a " + size_description + " nation, ruled by its " +
-                 "powerful " + leader_title + ". Its " + population_str + \
-                 " people " + gov_type_description + ". They pay an average" +
-                 " income tax of " + tax_rate.to_s + "."
+    paragraph1 = name + " is a " + size_description + " nation, ruled by its" +
+                 " powerful " + leader_title + ". Its " + population_str + \
+                 " people " + gov_type_description + "."
     paragraph2 = "Its currency is the " + currency + \
                  " and its national animal is the " + animal + ", " + \
-                 animal_environment + "." #issues will also go here
+                 animal_environment + ". The average income tax is " +
+                 tax_rate.to_s + "%."
+                 #issues will also go here
     [paragraph1, paragraph2]
   end
 
