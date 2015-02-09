@@ -42,7 +42,7 @@ class IdeologyParser
     @ec_freedom += 30*@q5_response
     @tax_rate -= 8*@q5_response
 
-    @tax_rate += 10*@q6_response
+    @tax_rate += 20*@q6_response
     @ec_freedom -= 5*@q6_response
     @ecosystem += 25*@q6_response
 
