@@ -14,6 +14,10 @@ module Api
       end
     end
 
+    def respond
+      @issue_option = IssueOption.find(params[:id])
+    end
+
     private
     def issue_params
       params.require(:issue).permit(:title, :body)

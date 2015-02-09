@@ -7,6 +7,8 @@ NationStatesClone::Application.routes.draw do
   namespace :api, defaults: { format: :json } do
     resources :nations
     resources :issues
+    post 'issues/:id/respond', to: 'issues#respond' #id here should be the
+                                                    #option id, not the issue id
   end
 
 end
