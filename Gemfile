@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'byebug'
 gem 'backbone-on-rails'
 gem 'newrelic_rpm'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
