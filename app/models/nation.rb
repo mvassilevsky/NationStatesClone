@@ -59,8 +59,10 @@ class Nation < ActiveRecord::Base
     nation
   end
 
-  def initialize(nation_parameters)
-    adjust_params!(nation_parameters)
+  def initialize(nation_parameters = {})
+    if nation_parameters != {}
+      adjust_params!(nation_parameters)
+    end
     super(nation_parameters)
   end
 

@@ -17,6 +17,7 @@ class NationIssue < ActiveRecord::Base
     class_name: "Nation",
     foreign_key: :nation_id
   )
+  
   belongs_to(
     :issue,
     class_name: "Issue",

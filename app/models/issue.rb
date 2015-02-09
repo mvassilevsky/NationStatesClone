@@ -18,6 +18,10 @@ class Issue < ActiveRecord::Base
     foreign_key: :issue_id
   )
 
-  has_many :nations, through: :nation_issues
+  has_many(
+    :issue_options,
+    class_name: "IssueOption",
+    foreign_key: :issue_id
+  )
 
 end

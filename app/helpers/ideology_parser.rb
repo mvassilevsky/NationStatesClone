@@ -29,20 +29,20 @@ class IdeologyParser
 
   def parse
     @ec_freedom -= 5*@q1_response
-    @tax_rate += 16*@q1_response
+    @tax_rate += 20*@q1_response
 
     @pol_freedom += 20*@q2_response
 
     @soc_freedom += 30*@q3_response
-    @tax_rate -= @q3_response
+    @tax_rate -= 2*@q3_response
 
     @soc_freedom += 5*@q4_response
     @pol_freedom += 10*@q4_response
 
     @ec_freedom += 30*@q5_response
-    @tax_rate -= 6*@q5_response
+    @tax_rate -= 8*@q5_response
 
-    @tax_rate += 8*@q6_response
+    @tax_rate += 10*@q6_response
     @ec_freedom -= 5*@q6_response
     @ecosystem += 25*@q6_response
 

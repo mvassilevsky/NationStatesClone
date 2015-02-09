@@ -16,4 +16,21 @@
 #
 
 class IssueOption < ActiveRecord::Base
+  validates(
+    :issue_id,
+    :body,
+    :ec_freedom,
+    :soc_freedom,
+    :pol_freedom,
+    :tax_rate,
+    :ecosystem,
+    :result_txt,
+    presence: true
+  )
+
+  belongs_to(
+    :issue,
+    class_name: "Issue",
+    foreign_key: :issue_id
+  )
 end

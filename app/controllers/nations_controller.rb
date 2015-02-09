@@ -12,9 +12,7 @@ class NationsController < ApplicationController
     ideology_stats = IdeologyParser.new(ideology_params).parse
     nation_parameters.merge!(ideology_stats)
     nation_parameters.merge!(beginning_parameters)
-    p beginning_parameters
     @nation = Nation.new(nation_parameters)
-    p @nation
     @questions = IdeologyParser.questions
     if @nation.save
       sign_in!(@nation)
