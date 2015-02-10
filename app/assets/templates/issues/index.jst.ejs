@@ -7,10 +7,14 @@
 
 <div id="issues">
   <h2 class="issue-header"><%= nationName %> Decides!</h2>
-  <p>The following issues confront <%= nationName %>:</p>
-  <ul class="issue-list">
-    <% issues.each(function (issue) { %>
-      <li><a href="#issue/<%= issue.id %>"><%= issue.get('title') %></a></li>
-    <% }) %>
-  </ul>
+  <% if (issues.length > 0) { %>
+    <p>The following issues confront <%= nationName %>:</p>
+    <ul class="issue-list">
+      <% issues.each(function (issue) { %>
+        <li><a href="#issue/<%= issue.id %>"><%= issue.get('title') %></a></li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p><button class="submit">Get More Issues</button></p>
+  <% } %>
 </div>

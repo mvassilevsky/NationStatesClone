@@ -31,20 +31,21 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
   selectIssueOption: function (event) {
     if (event.currentTarget.name !== "dismiss") {
       var issueOptionId = event.currentTarget.name;
-      $.ajax({
-        data: {issue_id: this.model.id},
-        url: "/api/issues/" + issueOptionId + "/respond",
-        dataType: "json",
-        method: "POST"
-      });
+      this.issueOptionAjax("/api/issues/" + issueOptionId + "/respond");
     } else {
-      $.ajax({
-        data: {issue_id: this.model.id},
-        url: "/api/issues/dismiss",
-        dataType: "json",
-        method: "POST"
-      });
+      this.issueOptionAjax("/api/issues/dismiss");
     }
-    Backbone.history.navigate("/issues", { trigger: true });
+  },
+
+  issueOptionAjax: function (url) {
+    $.ajax({
+      data: {issue_id: this.model.id},
+      url: url,
+      dataType: "json",
+      method: "POST",
+      success: function () {
+        Backbone.history.navigate("/issues", { trigger: true });
+      }
+    });
   }
 });

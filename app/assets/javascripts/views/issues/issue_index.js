@@ -2,7 +2,8 @@ NationStatesClone.Views.IssuesIndex = Backbone.View.extend({
   template: JST['issues/index'],
 
   events: {
-    "click .logout": "logout"
+    "click .logout": "logout",
+    "click .submit": "getIssues"
   },
 
   initialize: function () {
@@ -24,6 +25,17 @@ NationStatesClone.Views.IssuesIndex = Backbone.View.extend({
       url: "/api/nations/" + NationStatesClone.CURRENT_NATION.nation,
       dataType: "json",
       method: "DELETE"
+    });
+  },
+
+  getIssues: function (event) {
+    $.ajax({
+      url: "/api/get_issues",
+      dataType: "json",
+      method: "GET",
+      success: function () {
+        Backbone.history.loadUrl(Backbone.history.fragment);
+      }
     });
   }
 });

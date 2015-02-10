@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150206214200) do
+ActiveRecord::Schema.define(version: 20150210215701) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,22 +49,22 @@ ActiveRecord::Schema.define(version: 20150206214200) do
   add_index "nation_issues", ["nation_id"], name: "index_nation_issues_on_nation_id", using: :btree
 
   create_table "nations", force: true do |t|
-    t.string   "name",            null: false
-    t.string   "password_digest", null: false
-    t.string   "session_token",   null: false
-    t.integer  "ec_freedom",      null: false
-    t.integer  "soc_freedom",     null: false
-    t.integer  "pol_freedom",     null: false
-    t.string   "currency",        null: false
-    t.string   "animal",          null: false
-    t.integer  "population",      null: false
-    t.string   "leader_title",    null: false
+    t.string   "name",                      null: false
+    t.string   "password_digest",           null: false
+    t.string   "session_token",             null: false
+    t.integer  "ec_freedom",                null: false
+    t.integer  "soc_freedom",               null: false
+    t.integer  "pol_freedom",               null: false
+    t.string   "currency",                  null: false
+    t.string   "animal",                    null: false
+    t.integer  "population",      limit: 8, null: false
+    t.string   "leader_title",              null: false
     t.string   "motto"
     t.string   "recent_issues"
     t.string   "flag_url"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "tax_rate",        null: false
+    t.integer  "tax_rate",                  null: false
     t.integer  "ecosystem"
   end
 
