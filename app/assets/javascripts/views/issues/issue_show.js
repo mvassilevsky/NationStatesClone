@@ -2,7 +2,8 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
   template: JST['issues/show'],
 
   events: {
-    "click .logout": "logout"
+    "click .logout": "logout",
+    "click button": "selectIssueOption"
   },
 
   initialize: function (options) {
@@ -25,5 +26,14 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
       dataType: "json",
       method: "DELETE"
     });
+  },
+
+  selectIssueOption: function (event) {
+    var issueOptionId = event.currentTarget.name;
+    $.ajax({
+      url: "/api/issues/" + issueOptionId + "/respond",
+      dataType: "json",
+      method: "POST"
+    })
   }
 });

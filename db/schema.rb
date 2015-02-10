@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 20150206214200) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "tax_rate",        null: false
-    t.integer  "ecosystem",       null: false
+    t.integer  "ecosystem"
   end
 
 end

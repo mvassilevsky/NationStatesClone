@@ -66,6 +66,13 @@ class Nation < ActiveRecord::Base
     super(nation_parameters)
   end
 
+  def update_attributes(nation_parameters = {})
+    if nation_parameters != {}
+      adjust_params!(nation_parameters)
+    end
+    super(nation_parameters)
+  end
+
   def adjust_params!(nation_parameters)
     limited_params = [:ec_freedom, :soc_freedom, :pol_freedom, :tax_rate, :ecosystem]
     limited_params.each do |param|
