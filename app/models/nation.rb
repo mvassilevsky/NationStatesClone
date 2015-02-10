@@ -19,7 +19,7 @@
 #  created_at      :datetime
 #  updated_at      :datetime
 #  tax_rate        :integer          not null
-#  ecosystem       :integer          not null
+#  ecosystem       :integer
 #
 
 class Nation < ActiveRecord::Base
@@ -76,6 +76,7 @@ class Nation < ActiveRecord::Base
   def adjust_params!(nation_parameters)
     limited_params = [:ec_freedom, :soc_freedom, :pol_freedom, :tax_rate, :ecosystem]
     limited_params.each do |param|
+      next unless nation_parameters[param]
       if nation_parameters[param] > 100
         nation_parameters[param] = 100
       elsif nation_parameters[param] < 0

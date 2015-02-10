@@ -34,6 +34,12 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
 
+group :development do
+  gem 'byebug'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

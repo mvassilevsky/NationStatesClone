@@ -9,6 +9,7 @@ NationStatesClone::Application.routes.draw do
     resources :issues
     post 'issues/:id/respond', to: 'issues#respond' #id here should be the
                                                     #option id, not the issue id
+    post 'issues/dismiss', to: 'issues#dismiss'
   end
 
 end

@@ -36,6 +36,13 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
         dataType: "json",
         method: "POST"
       });
+    } else {
+      $.ajax({
+        data: {issue_id: this.model.id},
+        url: "/api/issues/dismiss",
+        dataType: "json",
+        method: "POST"
+      });
     }
     Backbone.history.navigate("/issues", { trigger: true });
   }
