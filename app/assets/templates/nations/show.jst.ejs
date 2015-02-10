@@ -1,11 +1,13 @@
+<% var nationName = nation.get('name') %>
+
 <div id="sidebar">
-  <strong><a href=""><%= nation.get('name') %></a></strong><br>
+  <strong><a href=""><%= nationName %></a></strong><br>
   <a href="#/issues">Issues</a><br>
   <a href="" class="logout">Log Out</a>
 </div>
 
 <div id="nation">
-  <h2 class="name"><%= nation.get('name') %></h2>
+  <h2 class="name"><%= nationName %></h2>
   <h3 class="motto">"<%= nation.get('motto') %>"</h3>
   <table class="summary">
     <tr>

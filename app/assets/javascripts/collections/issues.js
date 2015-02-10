@@ -8,7 +8,7 @@ NationStatesClone.Collections.Issues = Backbone.Collection.extend({
     if (issue) {
       issue.fetch();
     } else {
-      issue = new NationStatesClone.Models.issue({ id: id })
+      issue = new NationStatesClone.Models.Issue({ id: id })
       issue.fetch({
         success: function () {
           this.add(issue);

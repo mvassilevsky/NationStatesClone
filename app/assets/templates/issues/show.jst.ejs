@@ -1,0 +1,22 @@
+<% var nationName = nation.get('name') %>
+
+<div id="sidebar">
+  <strong><a href=""><%= nationName %></a></strong><br>
+  <a href="#/issues">Issues</a><br>
+  <a href="" class="logout">Log Out</a>
+</div>
+
+<div id="issue">
+  <h2><%= nationName %> Decides:</h2>
+  <h3><%= issue.get('title') %></h3>
+  <p class="issue_indicator">The Issue</p>
+  <p><%= issue.get('body') %></p>
+  <p class="issue_indicator">The Debate</p>
+  <ol class="options">
+    <% if (issue.get('issue_options') != undefined) { %>
+      <% issue.get('issue_options').forEach(function (option) { %>
+        <li><%= option.body %></li>
+      <% }) %>
+    <% } %>
+  </ol>
+</div>

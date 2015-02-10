@@ -10,7 +10,7 @@
   <p>The following issues confront <%= nationName %>:</p>
   <ul class="issue-list">
     <% issues.each(function (issue) { %>
-      <li><%= issue.get('title') %></li>
+      <li><a href="#issue/<%= issue.id %>"><%= issue.get('title') %></a></li>
     <% }) %>
   </ul>
 </div>

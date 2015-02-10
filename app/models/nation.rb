@@ -167,7 +167,7 @@ class Nation < ActiveRecord::Base
         if pol_freedom >= 0 && pol_freedom < 33
           return "Libertarian Dictatorship"
         elsif pol_freedom >= 33 && pol_freedom < 66
-          return "Democratic Night-Watchman State"
+          return "Near-Minimal State"
         else
           return "Anarchy"
         end
@@ -382,7 +382,7 @@ class Nation < ActiveRecord::Base
       "enjoy great individual freedoms in everything except elections, which," +
       " where they exist at all, are populist shams for a dictatorial" +
       " government that has no intention of ever giving up power"
-    when "Democratic Night-Watchman State"
+    when "Near-Minimal State"
       "enjoy a large degree of social and economic freedom, though" +
       " experiencing a significant degree of inequality"
     when "Anarchy"
