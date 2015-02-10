@@ -14,6 +14,18 @@ module Api
       redirect_to new_session_url
     end
 
+    def get_issues
+      nation_id = current_nation.id
+      issue_ids = Issue.pluck(:id).sample(3)
+      issue_ids.each do |issue_id|
+        nation_issue = NationIssue.new
+        nation_issue.nation_id = nation_id
+        nation_issue.issue_id = issue_id
+        nation_issue.save
+      end
+      render 'api/issues/index'
+    end
+
     private
     def nation_params
       params.require(:nation).permit(:name, :password, :currency, :animal,

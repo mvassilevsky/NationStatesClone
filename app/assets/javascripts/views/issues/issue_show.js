@@ -32,6 +32,7 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
     if (event.currentTarget.name !== "dismiss") {
       var issueOptionId = event.currentTarget.name;
       $.ajax({
+        data: {issue_id: this.model.id},
         url: "/api/issues/" + issueOptionId + "/respond",
         dataType: "json",
         method: "POST"

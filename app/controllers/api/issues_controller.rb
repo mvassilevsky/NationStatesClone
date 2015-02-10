@@ -31,6 +31,7 @@ module Api
         population: new_population
       }
       if current_nation.update_attributes(nation_params)
+        NationIssue.where(nation_id: current_nation.id, issue_id: params[:issue_id]).first.destroy!
         render :index
       else
         render json: current_nation.errors.full_messages,
