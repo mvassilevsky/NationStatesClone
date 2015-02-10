@@ -15,13 +15,15 @@
 }
 
 #sidebar a {
-  font-size: 15px;
+  font-size: 18px;
   color: green;
   text-decoration: none;
+  display: inline-block;
 }
 
-#sidebar strong a {
+#sidebar a.nation-link {
   font-size: 24px;
+  padding-bottom: 30px;
 }
 
 h1 {
@@ -82,6 +84,10 @@ h3.motto {
 .issue-list a {
   color: green;
   text-decoration: none;
+}
+
+h6 {
+  color: #CC6600;
 }
 
 .footer {
