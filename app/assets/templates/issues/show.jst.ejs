@@ -18,10 +18,10 @@
         <% var option = issue.get('issue_options')[i] %>
         <li>
           <p><%= option.body %></p>
-          <p><button type="submit" name="<%= option.id %>">Accept</button></p>
+          <p><button class="submit" name="<%= option.id %>">Accept</button></p>
         </li>
       <% } %>
     <% } %>
   </ol>
-  <p><button type="submit" name="dismiss">Dismiss This Issue</button></p>
+  <p><button class="submit" name="dismiss">Dismiss This Issue</button></p>
 </div>

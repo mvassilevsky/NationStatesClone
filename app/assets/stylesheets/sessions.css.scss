@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#main {
+  font-family: Verdana;
+}
+
 #sidebar {
   position: absolute;
   left: 0px;
@@ -22,7 +26,7 @@
 }
 
 #sidebar a.nation-link {
-  font-size: 24px;
+  font-size: 20px;
   padding-bottom: 30px;
 }
 
@@ -39,17 +43,14 @@ h1 {
   text-align: center;
 }
 
-#main-section {
+#main-section, #nation, #issues, #issue {
   margin-left: 180px;
   margin-top: 70px;
-  font-size: 20px;
-  text-align: center;
+  font-size: 16px;
 }
 
-#nation, #issues, #issue {
-  margin-left: 180px;
-  margin-top: 70px;
-  font-size: 20px;
+#main-section {
+  text-align: center;
 }
 
 h2.name {
@@ -88,6 +89,13 @@ h3.motto {
 
 h6 {
   color: #CC6600;
+}
+
+.submit {
+  margin: 8px;
+  color: white;
+  font-weight: bold;
+  background-color: green;
 }
 
 .footer {
