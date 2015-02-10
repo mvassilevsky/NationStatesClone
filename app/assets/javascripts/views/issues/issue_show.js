@@ -29,12 +29,14 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
   },
 
   selectIssueOption: function (event) {
-    var issueOptionId = event.currentTarget.name;
-    $.ajax({
-      url: "/api/issues/" + issueOptionId + "/respond",
-      dataType: "json",
-      method: "POST"
-    });
+    if (event.currentTarget.name !== "dismiss") {
+      var issueOptionId = event.currentTarget.name;
+      $.ajax({
+        url: "/api/issues/" + issueOptionId + "/respond",
+        dataType: "json",
+        method: "POST"
+      });
+    }
     Backbone.history.navigate("/issues", { trigger: true });
   }
 });
