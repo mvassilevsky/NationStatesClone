@@ -7,7 +7,7 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
   },
 
   initialize: function (options) {
-    this.nation = options.nation
+    this.nation = options.nation;
     this.listenTo(this.model, 'sync', this.render);
   },
 
@@ -34,6 +34,7 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
       url: "/api/issues/" + issueOptionId + "/respond",
       dataType: "json",
       method: "POST"
-    })
+    });
+    Backbone.history.navigate("/issues", { trigger: true });
   }
 });
