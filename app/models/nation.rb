@@ -436,14 +436,20 @@ class Nation < ActiveRecord::Base
 
   def issue_str
     issue_txt = ""
-    last5 = last5NationIssues
-    last5.each do |resolved_nation_issue|
-      issue_txt += resolved_nation_issue.chosen_option.result_txt + " "
+    lastFew = lastFewNationIssues
+    lastFew.each_with_index do |resolved_nation_issue, idx|
+      if idx == lastFew.length - 1
+        issue_txt += resolved_nation_issue.chosen_option.result_txt + "."
+      elsif idx == lastFew.length - 2
+        issue_txt += resolved_nation_issue.chosen_option.result_txt + ", and "
+      else
+        issue_txt += resolved_nation_issue.chosen_option.result_txt + ", "
+      end
     end
-    issue_txt.capitalize.chop + "."
+    issue_txt.capitalize
   end
 
-  def last5NationIssues
+  def lastFewNationIssues
     NationIssue.order("updated_at").where(resolved: true).last(5)
   end
 

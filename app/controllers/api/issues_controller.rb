@@ -31,10 +31,10 @@ module Api
         population: new_population
       }
       if current_nation.update_attributes(nation_params)
-        this_issue = NationIssue.where(nation_id: current_nation.id, issue_id: params[:issue_id]).first
+        this_issue = NationIssue.where(nation_id: current_nation.id, issue_id: params[:issue_id], resolved: false).first
         this_issue.resolved = true
         this_issue.chosen_option_id = @issue_option.id
-        this_issue.save
+        this_issue.save!
         render :index
       else
         render json: current_nation.errors.full_messages,
@@ -45,7 +45,7 @@ module Api
     def dismiss
       nation_params = { population: 1.5*current_nation.population }
       if current_nation.update_attributes(nation_params)
-        NationIssue.where(nation_id: current_nation.id, issue_id: params[:issue_id]).first.destroy!
+        NationIssue.where(nation_id: current_nation.id, issue_id: params[:issue_id], resolved: false).first.destroy!
         render :index
       else
         render json: current_nation.errors.full_messages,
