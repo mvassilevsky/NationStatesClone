@@ -400,11 +400,14 @@ class Nation < ActiveRecord::Base
   end
 
   def resolved_issues
-    issues.where(resolved: true)
+    # nation_issues.where(resolved: true).issue
+    issues.where("nation_issues.resolved = ?", true)
   end
 
+
   def unresolved_issues
-    issues.where(resolved: false)
+    issues.where("nation_issues.resolved = ?", false)
+    # nation_issues.where(resolved: false).issue
   end
 
   def animal_environment
@@ -433,14 +436,22 @@ class Nation < ActiveRecord::Base
     end
   end
 
+  def issue_str
+    issue_txt = ""
+    last5 = NationIssue.order("updated_at").where(resolved: true).last(5)
+    last5.each do |resolved_nation_issue|
+      issue_txt += resolved_nation_issue.chosen_option.result_txt + " "
+    end
+    issue_txt.capitalize.chop + "."
+  end
+
   def description
     paragraph1 = "#{name} is a #{size_description} nation, ruled by its" +
                  " powerful #{leader_title}. Its #{population_str} people" +
                  " #{gov_type_description}."
-    paragraph2 = "Its currency is the #{currency} and its national animal is" +
-                 " the #{animal}, #{animal_environment}. The average income" +
-                 " tax is #{tax_rate.to_s}%."
-                 #issues will also go here
+    paragraph2 = issue_str + " Its currency is the #{currency} and its" +
+                 " national animal is the #{animal}, #{animal_environment}." +
+                 " The average income tax is #{tax_rate.to_s}%."
     [paragraph1, paragraph2]
   end
 
