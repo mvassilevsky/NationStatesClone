@@ -83,6 +83,11 @@ class Nation < ActiveRecord::Base
         nation_parameters[param] = 0
       end
     end
+    if nation_parameters[:population]
+      if nation_parameters[:population] > 9223372036854775807 #prevents overflow in database
+        nation_parameters = 9223372036854775807
+      end
+    end
     nation_parameters
   end
 
@@ -436,21 +441,43 @@ class Nation < ActiveRecord::Base
 
   def issue_str
     issue_txt = ""
-    lastFew = lastFewNationIssues
-    lastFew.each_with_index do |resolved_nation_issue, idx|
-      if idx == lastFew.length - 1
-        issue_txt += resolved_nation_issue.chosen_option.result_txt + "."
-      elsif idx == lastFew.length - 2
-        issue_txt += resolved_nation_issue.chosen_option.result_txt + ", and "
+    last_few = last_few_nation_issues
+    last_few.each_with_index do |resolved_nation_issue, idx|
+      issue_txt += resolved_nation_issue.chosen_option.result_txt
+      if idx == last_few.length - 1
+         issue_txt += "."
+      elsif idx == last_few.length - 2
+        issue_txt += ", and "
       else
-        issue_txt += resolved_nation_issue.chosen_option.result_txt + ", "
+        issue_txt += ", "
       end
     end
     issue_txt.capitalize
   end
 
-  def lastFewNationIssues
+  def last_few_nation_issues
     NationIssue.order("updated_at").where(nation_id: self.id, resolved: true).last(5)
+  end
+
+  def last_few_stats
+    history_stats = []
+    at_time_stats = {
+      ec_freedom: self.ec_freedom,
+      soc_freedom: self.soc_freedom,
+      pol_freedom: self.pol_freedom
+    }
+    history_stats.unshift(at_time_stats)
+    last_few_nation_issues.each do |resolved_nation_issue|
+      chosen_option = resolved_nation_issue.chosen_option
+      at_time_stats = {
+        ec_freedom: at_time_stats[:ec_freedom] - chosen_option.ec_freedom,
+        soc_freedom: at_time_stats[:soc_freedom] - chosen_option.soc_freedom,
+        pol_freedom: at_time_stats[:pol_freedom] - chosen_option.pol_freedom
+      }
+      adjust_params!(at_time_stats)
+      history_stats.unshift(at_time_stats)
+    end
+    history_stats
   end
 
   def description
