@@ -34,4 +34,8 @@
 
   <p><%= nation.get("description") && nation.get("description")[0] %></p>
   <p><%= nation.get("description") && nation.get("description")[1] %></p>
+
+  <% if (nation.get("last_few_stats")) { %>
+    <canvas id='stats' width='400' height='400'></canvas>
+  <% } %>
 </div>

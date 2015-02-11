@@ -455,6 +455,18 @@ class Nation < ActiveRecord::Base
     issue_txt.capitalize
   end
 
+  def tax_rate_str
+    if tax_rate > 60
+      "The people struggle under the heavy burden of an average income tax of" +
+       " #{tax_rate.to_s}%."
+    elsif tax_rate < 15
+      "The people enjoy low taxes, with an average rate of" +
+      " #{tax_rate.to_s}%."
+    else
+      "The average income tax is #{tax_rate.to_s}%."
+    end
+  end
+
   def last_few_nation_issues
     NationIssue.order("updated_at").where(nation_id: self.id, resolved: true).last(5)
   end
@@ -486,7 +498,7 @@ class Nation < ActiveRecord::Base
                  " #{gov_type_description}."
     paragraph2 = issue_str + " Its currency is the #{currency} and its" +
                  " national animal is the #{animal}, #{animal_environment}." +
-                 " The average income tax is #{tax_rate.to_s}%."
+                 " #{tax_rate_str}"
     [paragraph1, paragraph2]
   end
 
