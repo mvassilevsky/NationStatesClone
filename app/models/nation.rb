@@ -399,6 +399,13 @@ class Nation < ActiveRecord::Base
     end
   end
 
+  def resolved_issues
+    issues.where(resolved: true)
+  end
+
+  def unresolved_issues
+    issues.where(resolved: false)
+  end
 
   def animal_environment
     case ecosystem

@@ -1,7 +1,7 @@
 module Api
   class IssuesController < ApplicationController
     def index
-      @issues = current_nation.issues
+      @issues = current_nation.unresolved_issues
       render :index
     end
 
@@ -31,7 +31,10 @@ module Api
         population: new_population
       }
       if current_nation.update_attributes(nation_params)
-        NationIssue.where(nation_id: current_nation.id, issue_id: params[:issue_id]).first.destroy!
+        # NationIssue.where(nation_id: current_nation.id, issue_id: params[:issue_id]).first.destroy!
+        this_issue = NationIssue.where(nation_id: current_nation.id, issue_id: params[:issue_id]).first
+        this_issue.resolved = true
+        this_issue.chosen_option = @issue_option.id
         render :index
       else
         render json: current_nation.errors.full_messages,
