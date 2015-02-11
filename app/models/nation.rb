@@ -450,7 +450,7 @@ class Nation < ActiveRecord::Base
   end
 
   def lastFewNationIssues
-    NationIssue.order("updated_at").where(resolved: true).last(5)
+    NationIssue.order("updated_at").where(nation_id: self.id, resolved: true).last(5)
   end
 
   def description
