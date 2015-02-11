@@ -19,7 +19,7 @@
 #  created_at      :datetime
 #  updated_at      :datetime
 #  tax_rate        :integer          not null
-#  ecosystem       :integer
+#  ecosystem       :integer          not null
 #
 
 class Nation < ActiveRecord::Base
@@ -400,14 +400,12 @@ class Nation < ActiveRecord::Base
   end
 
   def resolved_issues
-    # nation_issues.where(resolved: true).issue
     issues.where("nation_issues.resolved = ?", true)
   end
 
 
   def unresolved_issues
     issues.where("nation_issues.resolved = ?", false)
-    # nation_issues.where(resolved: false).issue
   end
 
   def animal_environment
@@ -438,11 +436,15 @@ class Nation < ActiveRecord::Base
 
   def issue_str
     issue_txt = ""
-    last5 = NationIssue.order("updated_at").where(resolved: true).last(5)
+    last5 = last5NationIssues
     last5.each do |resolved_nation_issue|
       issue_txt += resolved_nation_issue.chosen_option.result_txt + " "
     end
     issue_txt.capitalize.chop + "."
+  end
+
+  def last5NationIssues
+    NationIssue.order("updated_at").where(resolved: true).last(5)
   end
 
   def description

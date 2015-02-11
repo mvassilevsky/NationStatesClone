@@ -19,7 +19,7 @@
 #  created_at      :datetime
 #  updated_at      :datetime
 #  tax_rate        :integer          not null
-#  ecosystem       :integer
+#  ecosystem       :integer          not null
 #
 
 require 'test_helper'

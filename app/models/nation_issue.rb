@@ -2,13 +2,13 @@
 #
 # Table name: nation_issues
 #
-#  id            :integer          not null, primary key
-#  nation_id     :integer          not null
-#  issue_id      :integer          not null
-#  created_at    :datetime
-#  updated_at    :datetime
-#  resolved      :boolean          default(FALSE)
-#  chosen_option :integer
+#  id               :integer          not null, primary key
+#  nation_id        :integer          not null
+#  issue_id         :integer          not null
+#  created_at       :datetime
+#  updated_at       :datetime
+#  resolved         :boolean          default(FALSE)
+#  chosen_option_id :integer
 #
 
 class NationIssue < ActiveRecord::Base
@@ -29,7 +29,7 @@ class NationIssue < ActiveRecord::Base
   belongs_to(
     :chosen_option,
     class_name: "IssueOption",
-    foreign_key: :chosen_option
+    foreign_key: :chosen_option_id
   )
 
 end
