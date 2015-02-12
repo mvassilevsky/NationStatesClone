@@ -23,7 +23,7 @@ NationStatesClone.Views.NationsIndex = Backbone.View.extend({
     $.ajax({
       url: "/session",
       dataType: "json",
-      method: "DELETE",
+      method: "DELETE"
     });
   }
 });

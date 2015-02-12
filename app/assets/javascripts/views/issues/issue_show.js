@@ -24,7 +24,7 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
     $.ajax({
       url: "/session",
       dataType: "json",
-      method: "DELETE",
+      method: "DELETE"
     });
   },
 
