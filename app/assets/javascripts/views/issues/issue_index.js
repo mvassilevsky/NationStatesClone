@@ -21,10 +21,17 @@ NationStatesClone.Views.IssuesIndex = Backbone.View.extend({
   },
 
   logout: function (event) {
+    event.preventDefault();
     $.ajax({
       url: "/session",
       dataType: "json",
-      method: "DELETE"
+      method: "DELETE",
+      success: function (response) {
+        window.location = '';
+      },
+      error: function (response) {
+        window.location = '';
+      }
     });
   },
 
