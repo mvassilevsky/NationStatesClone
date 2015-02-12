@@ -18,6 +18,14 @@ NationStatesClone.Views.NationEdit = Backbone.View.extend({
     return this;
   },
 
+  logout: function (event) {
+    $.ajax({
+      url: "/api/nations/" + NationStatesClone.CURRENT_NATION.nation,
+      dataType: "json",
+      method: "DELETE"
+    });
+  },
+
   afterRender: function () {
     $("input[name='nation[currency]']").val(this.model.get('currency'));
     $("input[name='nation[animal]']").val(this.model.get('animal'));

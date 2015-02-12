@@ -44,7 +44,7 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
     NationStatesClone.Collections.nations.fetch();
     var currentNation = undefined;
     if (NationStatesClone.CURRENT_NATION) {
-      nation = NationStatesClone.Collections.nations.getOrFetch(
+      currentNation = NationStatesClone.Collections.nations.getOrFetch(
         NationStatesClone.CURRENT_NATION.nation
       );
     }
