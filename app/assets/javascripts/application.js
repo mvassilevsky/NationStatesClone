@@ -15,6 +15,7 @@
 //= require underscore
 //= require backbone
 //= require Chart
+//= require jquery.serializejson
 //= require nation_states_clone
 //= require_tree ../templates
 //= require_tree ./models

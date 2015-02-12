@@ -8,6 +8,7 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
     'issues': 'issueIndex',
     'issues/:id': 'issueShow',
     'nations': 'nationIndex',
+    'nations/edit': 'nationEdit',
     'nations/:id': 'nationShow'
   },
 
@@ -43,7 +44,7 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
     NationStatesClone.Collections.nations.fetch();
     var currentNation = undefined;
     if (NationStatesClone.CURRENT_NATION) {
-      currentNation = NationStatesClone.Collections.nations.getOrFetch(
+      nation = NationStatesClone.Collections.nations.getOrFetch(
         NationStatesClone.CURRENT_NATION.nation
       );
     }
@@ -52,6 +53,18 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
         currentNation: currentNation
     });
     this._swapView(indexView);
+  },
+
+  nationEdit: function () {
+    if (NationStatesClone.CURRENT_NATION) {
+      var nation = NationStatesClone.Collections.nations.getOrFetch(
+        NationStatesClone.CURRENT_NATION.nation
+      );
+      var editView = NationStatesClone.Views.NationEdit({
+        model: nation
+      });
+      this._swapView(editView);
+    }
   },
 
   issueIndex: function () {
