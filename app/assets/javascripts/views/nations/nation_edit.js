@@ -22,7 +22,10 @@ NationStatesClone.Views.NationEdit = Backbone.View.extend({
     $.ajax({
       url: "/api/nations/" + NationStatesClone.CURRENT_NATION.nation,
       dataType: "json",
-      method: "DELETE"
+      method: "DELETE",
+      success: function () {
+        Backbone.history.navigate("", { trigger: true });
+      }
     });
   },
 
