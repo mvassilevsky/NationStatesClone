@@ -10,17 +10,32 @@
 </div>
 
 <div id="nations">
+  <h2>The World</h2>
   <table class="nations-table">
     <% if (nations) { %>
+      <tr class="table-head">
+        <td>
+          Nation
+        </td>
+        <td>
+          Government Type
+        </td>
+        <td>
+          Motto
+        </td>
+      </tr>
       <% nations.each(function (nation) { %>
-        <tr>
+        <tr class="nation-row">
           <td>
-            <a href="/#nations/<%= nation.get('nations')[0].id %>">
-              <%= nation.get('nations')[0].name %>
+            <a href="/#nations/<%= nation.id %>">
+              <%= nation.get('name') %>
             </a>
           </td>
           <td>
             <%= nation.get('gov_type') %>
+          </td>
+          <td>
+            <%= nation.get('motto') %>
           </td>
         </tr>
       <% }) %>

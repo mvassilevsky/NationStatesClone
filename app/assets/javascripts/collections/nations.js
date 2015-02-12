@@ -16,8 +16,11 @@ NationStatesClone.Collections.Nations = Backbone.Collection.extend({
     }
 
     return nation;
-  }
+  },
 
+  parse: function (response) {
+    return response.nations;
+  }
 
 });
 

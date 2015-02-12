@@ -91,6 +91,30 @@ h6 {
   color: #CC6600;
 }
 
+.nations-table {
+  background-color: #EAEAE2;
+  box-shadow: 3px 3px 12px #999;
+  border: 1px #ccc solid;
+  padding: 0.5%;
+  border-spacing: 3px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.table-head {
+  font-weight: bold;
+}
+
+.nations-table td {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.nations-table .nation-row td {
+  background-color: white;
+}
+
 .submit {
   margin: 8px;
   color: white;
