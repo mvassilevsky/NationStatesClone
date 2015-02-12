@@ -7,6 +7,7 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
     '': 'loggedInNationShow',
     'issues': 'issueIndex',
     'issues/:id': 'issueShow',
+    'nations': 'nationIndex',
     'nations/:id': 'nationShow'
   },
 
@@ -24,25 +25,33 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
   },
 
   nationShow: function(id) {
+    var nation = NationStatesClone.Collections.nations.getOrFetch(id);
+    var currentNation = undefined;
     if (NationStatesClone.CURRENT_NATION) {
-      var nation = NationStatesClone.Collections.nations.getOrFetch(id);
-      var currentNation = NationStatesClone.Collections.nations.getOrFetch(
+      currentNation = NationStatesClone.Collections.nations.getOrFetch(
         NationStatesClone.CURRENT_NATION.nation
       );
-      var nationView = new NationStatesClone.Views.NationShow({
-        model: nation,
-        currentNation: currentNation
-      });
-      this._swapView(nationView);
-    } else {
-      var nation = NationStatesClone.Collections.nations.getOrFetch(id);
-      var currentNation = undefined;
-      var nationView = new NationStatesClone.Views.NationShow({
-        model: nation,
-        currentNation: currentNation
-      });
-      this._swapView(nationView);
     }
+    var nationView = new NationStatesClone.Views.NationShow({
+      model: nation,
+      currentNation: currentNation
+    });
+    this._swapView(nationView);
+  },
+
+  nationIndex: function () {
+    NationStatesClone.Collections.nations.fetch();
+    var currentNation = undefined;
+    if (NationStatesClone.CURRENT_NATION) {
+      currentNation = NationStatesClone.Collections.nations.getOrFetch(
+        NationStatesClone.CURRENT_NATION.nation
+      );
+    }
+    var indexView = new NationStatesClone.Views.NationsIndex({
+        collection: NationStatesClone.Collections.nations,
+        currentNation: currentNation
+    });
+    this._swapView(indexView);
   },
 
   issueIndex: function () {

@@ -1,6 +1,6 @@
 NationStatesClone.Collections.Nations = Backbone.Collection.extend({
   model: NationStatesClone.Models.Nation,
-  url: 'api/boards',
+  url: 'api/nations',
 
   getOrFetch: function (id) {
     var nation = this.get(id);

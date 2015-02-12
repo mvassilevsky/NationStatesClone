@@ -1,5 +1,10 @@
 module Api
   class NationsController < ApplicationController
+    def index
+      @nations = Nation.all
+      render :index
+    end
+
     def show
       @nation = Nation.find(params[:id])
       if @nation
