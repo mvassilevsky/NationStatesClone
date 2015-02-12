@@ -1,5 +1,7 @@
 <div id="sidebar">
-  <%= link_to "CREATE NEW NATION", new_nation_url %><br><br>
+  <strong><%= link_to "NEW NATION", new_nation_url %></strong>
+  <br>
+  <br>
   <form action="<%= session_url %>" method="post">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     <label>NATION

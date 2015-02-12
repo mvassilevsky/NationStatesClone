@@ -16,6 +16,7 @@
   background-color: #EEEEE0;
   font-size: 12px;
   word-wrap: break-word;
+  padding-left: 5px;
 }
 
 #sidebar a {
@@ -120,8 +121,8 @@ h6 {
   background-color: white;
 }
 
-.submit {
-  margin: 8px;
+input[type="submit"], .submit {
+  margin-top: 8px;
   color: white;
   font-weight: bold;
   background-color: green;
