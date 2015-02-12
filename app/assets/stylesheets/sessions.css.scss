@@ -43,6 +43,11 @@ h1 {
   text-align: center;
 }
 
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #main-section, #nations, #nation, #issues, #issue{
   margin-left: 180px;
   margin-top: 70px;

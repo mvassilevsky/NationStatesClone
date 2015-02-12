@@ -7,11 +7,9 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <h1>NationStates</h1>
+    <h1><a href="/">NationStates</a></h1>
     <div id="main">
-      <% if signed_in? %>
-        <%= render "layouts/logged_in_sidebar" %>
-      <% elsif request.env['PATH_INFO'] == new_nation_path %>
+      <% if request.env['PATH_INFO'] == new_nation_path %>
         <%= render "layouts/new_nation_sidebar" %>
       <% else %>
         <%= render "layouts/login_sidebar" %>
