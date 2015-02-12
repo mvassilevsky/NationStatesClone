@@ -17,7 +17,6 @@ leader_title   | string    | not null
 tax_rate       | integer   | not null
 ecosystem      | integer   | not null
 motto          | string    |
-recent_issues  | string    |
 flag_url       | string    |
 
 ## nation_issues
@@ -46,3 +45,12 @@ pol_freedom | integer   | not null
 tax_rate    | integer   | not null
 ecosystem   | integer   | not null
 result_txt  | string    | not null
+
+## nation_stat
+column name | data type | details
+------------|-----------|-----------------------
+id          | integer   | not null, primary key
+nation_id   | integer   | not null, foreign key (references nations)
+ec_freedom  | integer   | not null
+soc_freedom | integer   | not null
+pol_freedom | integer   | not null
