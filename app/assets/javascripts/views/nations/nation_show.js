@@ -15,7 +15,6 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
       issues: this.collection
     });
     this.$el.html(content);
-
     this.afterRender();
     return this;
   },
@@ -24,7 +23,11 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
     if (this.model.get('last_few_stats')) {
       var ctx = this.$("#stats").get(0).getContext("2d");
       var data = this.getData();
-      var statsChart = new Chart(ctx).Line(data);
+      var statsChart = new Chart(ctx).Line(data, {
+        datasetStrokeWidth : 4,
+        bezierCurveTension : 0.3,
+        multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
+      });
     }
   },
 
@@ -37,28 +40,58 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
   },
 
   getData: function () {
+    var soc_freedoms = [];
+    var ec_freedoms = [];
+    var pol_freedoms = [];
+    this.model.get('last_few_stats').forEach(function (stat) {
+      soc_freedoms.push(stat.soc_freedom)
+      ec_freedoms.push(stat.ec_freedom)
+      pol_freedoms.push(stat.pol_freedom)
+    });
+    var labels = [];
+    var num_stats = this.model.get('last_few_stats').length
+    for (var i = 0; i < num_stats; i++) {
+      if (i === (num_stats - 1)) {
+        labels.push("now");
+      } else {
+        labels.push("")
+      }
+    }
+    console.log(soc_freedoms);
+    console.log(ec_freedoms);
+    console.log(pol_freedoms);
     return {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: labels,
         datasets: [
             {
-                label: "My First dataset",
-                fillColor: "rgba(220,220,220,0.2)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [65, 59, 80, 81, 56, 55, 40]
+                label: "Individual Liberty",
+                fillColor: "rgba(255,255,255,0)",
+                strokeColor: "rgb(128,0,0)",
+                pointColor: "rgb(128,0,0)",
+                pointStrokeColor: "#aaa",
+                pointHighlightFill: "#aaa",
+                pointHighlightStroke: "rgb(128,0,0)",
+                data: soc_freedoms
             },
             {
-                label: "My Second dataset",
-                fillColor: "rgba(151,187,205,0.2)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(151,187,205,1)",
-                data: [28, 48, 40, 19, 86, 27, 90]
+                label: "Economy",
+                fillColor: "rgba(255,255,255,0)",
+                strokeColor: "rgb(234,193,23)",
+                pointColor: "rgb(234,193,23)",
+                pointStrokeColor: "#aaa",
+                pointHighlightFill: "#aaa",
+                pointHighlightStroke: "rgb(234,193,23)",
+                data: ec_freedoms
+            },
+            {
+                label: "Political Freedom",
+                fillColor: "rgba(255,255,255,0)",
+                strokeColor: "rgb(100,100,100)",
+                pointColor: "rgb(100,100,100)",
+                pointStrokeColor: "#aaa",
+                pointHighlightFill: "#aaa",
+                pointHighlightStroke: "rgba(100,100,100)",
+                data: pol_freedoms
             }
         ]
     };

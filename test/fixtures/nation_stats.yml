@@ -1,0 +1,24 @@
+# == Schema Information
+#
+# Table name: nation_stats
+#
+#  id          :integer          not null, primary key
+#  nation_id   :integer          not null
+#  ec_freedom  :integer          not null
+#  soc_freedom :integer          not null
+#  pol_freedom :integer          not null
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: {}
+# column: value
+#
+two: {}
+#  column: value

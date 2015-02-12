@@ -35,6 +35,12 @@ module Api
         this_issue.resolved = true
         this_issue.chosen_option_id = @issue_option.id
         this_issue.save!
+        NationStat.create({
+          nation_id: current_nation.id,
+          ec_freedom: current_nation.ec_freedom,
+          soc_freedom: current_nation.soc_freedom,
+          pol_freedom: current_nation.pol_freedom
+          })
         render :index
       else
         render json: current_nation.errors.full_messages,

@@ -14,7 +14,6 @@
 #  population      :integer          not null
 #  leader_title    :string(255)      not null
 #  motto           :string(255)
-#  recent_issues   :string(255)
 #  flag_url        :string(255)
 #  created_at      :datetime
 #  updated_at      :datetime

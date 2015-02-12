@@ -14,7 +14,6 @@
 #  population      :integer          not null
 #  leader_title    :string(255)      not null
 #  motto           :string(255)
-#  recent_issues   :string(255)
 #  flag_url        :string(255)
 #  created_at      :datetime
 #  updated_at      :datetime
@@ -49,6 +48,12 @@ class Nation < ActiveRecord::Base
   )
 
   has_many :issues, through: :nation_issues
+
+  has_many(
+    :nation_stats,
+    class_name: "NationStat",
+    foreign_key: :nation_id
+  )
 
   attr_reader :password
   after_initialize :ensure_session_token
@@ -283,13 +288,15 @@ class Nation < ActiveRecord::Base
   end
 
   def population_str
+    pop_str = ""
     if population >= 1000000000000
-      return (population / 1000000000000.to_f).to_s[0..3] + " trillion"
+      pop_str = (population / 1000000000000.to_f).to_s[0..3] + " trillion"
     elsif population >= 1000000000
-      return (population / 1000000000.to_f).to_s[0..3] + " billion"
+      pop_str = (population / 1000000000.to_f).to_s[0..3] + " billion"
     else
-      return (population / 1000000.to_f).to_s[0..3] + " million"
+      pop_str = (population / 1000000.to_f).to_s[0..3] + " million"
     end
+    pop_str
   end
 
   def gov_type_description
@@ -441,7 +448,7 @@ class Nation < ActiveRecord::Base
 
   def issue_str
     issue_txt = ""
-    last_few = last_few_nation_issues
+    last_few = last_few_nation_issues(5)
     last_few.each_with_index do |resolved_nation_issue, idx|
       issue_txt += resolved_nation_issue.chosen_option.result_txt
       if idx == last_few.length - 1
@@ -467,26 +474,18 @@ class Nation < ActiveRecord::Base
     end
   end
 
-  def last_few_nation_issues
-    NationIssue.order("updated_at").where(nation_id: self.id, resolved: true).last(5)
+  def last_few_nation_issues(num_issues)
+    NationIssue.order("updated_at DESC").where(nation_id: self.id, resolved: true).last(num_issues)
   end
 
   def last_few_stats
     history_stats = []
-    at_time_stats = {
-      ec_freedom: self.ec_freedom,
-      soc_freedom: self.soc_freedom,
-      pol_freedom: self.pol_freedom
-    }
-    history_stats.unshift(at_time_stats)
-    last_few_nation_issues.each do |resolved_nation_issue|
-      chosen_option = resolved_nation_issue.chosen_option
+    nation_stats.order("created_at DESC").each do |nation_stat|
       at_time_stats = {
-        ec_freedom: at_time_stats[:ec_freedom] - chosen_option.ec_freedom,
-        soc_freedom: at_time_stats[:soc_freedom] - chosen_option.soc_freedom,
-        pol_freedom: at_time_stats[:pol_freedom] - chosen_option.pol_freedom
+        ec_freedom: nation_stat.ec_freedom,
+        soc_freedom: nation_stat.soc_freedom,
+        pol_freedom: nation_stat.pol_freedom
       }
-      adjust_params!(at_time_stats)
       history_stats.unshift(at_time_stats)
     end
     history_stats

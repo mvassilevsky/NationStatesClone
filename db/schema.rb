@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150211175300) do
+ActiveRecord::Schema.define(version: 20150212005226) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,17 @@ ActiveRecord::Schema.define(version: 20150211175300) do
   add_index "nation_issues", ["issue_id"], name: "index_nation_issues_on_issue_id", using: :btree
   add_index "nation_issues", ["nation_id"], name: "index_nation_issues_on_nation_id", using: :btree
 
+  create_table "nation_stats", force: true do |t|
+    t.integer  "nation_id",   null: false
+    t.integer  "ec_freedom",  null: false
+    t.integer  "soc_freedom", null: false
+    t.integer  "pol_freedom", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "nation_stats", ["nation_id"], name: "index_nation_stats_on_nation_id", using: :btree
+
   create_table "nations", force: true do |t|
     t.string   "name",                      null: false
     t.string   "password_digest",           null: false
@@ -62,7 +73,6 @@ ActiveRecord::Schema.define(version: 20150211175300) do
     t.integer  "population",      limit: 8, null: false
     t.string   "leader_title",              null: false
     t.string   "motto"
-    t.string   "recent_issues"
     t.string   "flag_url"
     t.datetime "created_at"
     t.datetime "updated_at"

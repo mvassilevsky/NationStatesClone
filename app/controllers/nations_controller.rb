@@ -16,6 +16,12 @@ class NationsController < ApplicationController
     @questions = IdeologyParser.questions
     if @nation.save
       sign_in!(@nation)
+      NationStat.create({
+        nation_id: current_nation.id,
+        ec_freedom: current_nation.ec_freedom,
+        soc_freedom: current_nation.soc_freedom,
+        pol_freedom: current_nation.pol_freedom
+        })
       redirect_to root_url
     else
       flash.now[:errors] = @nation.errors.full_messages
