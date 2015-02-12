@@ -22,9 +22,12 @@ NationStatesClone.Views.IssuesIndex = Backbone.View.extend({
 
   logout: function (event) {
     $.ajax({
-      url: "/session",
+      url: "/api/nations/" + NationStatesClone.CURRENT_NATION.nation,
       dataType: "json",
       method: "DELETE",
+      success: function () {
+        Backbone.history.navigate("", { trigger: true });
+      }
     });
   },
 

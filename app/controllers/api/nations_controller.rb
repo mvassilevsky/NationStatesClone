@@ -19,9 +19,18 @@ module Api
       render :edit
     end
 
-    def destroy
-      sign_out
-      redirect_to new_session_url
+    # def destroy
+    #   sign_out
+    #   redirect_to new_session_url
+    # end
+
+    def update
+      @nation = Nation.find(params[:id])
+      if @nation.update_attributes(nation_params)
+        render :show
+      else
+        render json: @nation.errors.full_messages, status: 422
+      end
     end
 
     def get_issues
