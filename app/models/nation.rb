@@ -290,13 +290,12 @@ class Nation < ActiveRecord::Base
   def population_str
     pop_str = ""
     if population >= 1000000000000
-      pop_str = (population / 1000000000000.to_f).to_s[0..3] + " trillion"
+      return (population / 1000000000000.to_f).to_s[0..3] + " trillion"
     elsif population >= 1000000000
-      pop_str = (population / 1000000000.to_f).to_s[0..3] + " billion"
+      return (population / 1000000000.to_f).to_s[0..3] + " billion"
     else
-      pop_str = (population / 1000000.to_f).to_s[0..3] + " million"
+      return (population / 1000000.to_f).to_s[0..3] + " million"
     end
-    pop_str
   end
 
   def gov_type_description

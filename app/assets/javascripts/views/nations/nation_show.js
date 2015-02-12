@@ -5,13 +5,15 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
     "click .logout": "logout"
   },
 
-  initialize: function () {
+  initialize: function (options) {
+    this.currentNation = options.currentNation
     this.listenTo(this.model, 'sync', this.render);
   },
 
   render: function () {
     var content = this.template({
       nation: this.model,
+      currentNation: this.currentNation,
       issues: this.collection
     });
     this.$el.html(content);
@@ -57,9 +59,6 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
         labels.push("")
       }
     }
-    console.log(soc_freedoms);
-    console.log(ec_freedoms);
-    console.log(pol_freedoms);
     return {
         labels: labels,
         datasets: [

@@ -11,7 +11,7 @@
     <p>The following issues confront <%= nationName %>:</p>
     <ul class="issue-list">
       <% issues.each(function (issue) { %>
-        <li><a href="#issue/<%= issue.id %>"><%= issue.get('title') %></a></li>
+        <li><a href="#issues/<%= issue.id %>"><%= issue.get('title') %></a></li>
       <% }) %>
     </ul>
   <% } else { %>

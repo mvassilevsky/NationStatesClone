@@ -6,7 +6,8 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
   routes: {
     '': 'loggedInNationShow',
     'issues': 'issueIndex',
-    'issue/:id': 'issueShow'
+    'issues/:id': 'issueShow',
+    'nations/:id': 'nationShow'
   },
 
   loggedInNationShow: function () {
@@ -15,7 +16,30 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
         NationStatesClone.CURRENT_NATION.nation
       );
       var nationView = new NationStatesClone.Views.NationShow({
-        model: nation
+        model: nation,
+        currentNation: nation
+      });
+      this._swapView(nationView);
+    }
+  },
+
+  nationShow: function(id) {
+    if (NationStatesClone.CURRENT_NATION) {
+      var nation = NationStatesClone.Collections.nations.getOrFetch(id);
+      var currentNation = NationStatesClone.Collections.nations.getOrFetch(
+        NationStatesClone.CURRENT_NATION.nation
+      );
+      var nationView = new NationStatesClone.Views.NationShow({
+        model: nation,
+        currentNation: currentNation
+      });
+      this._swapView(nationView);
+    } else {
+      var nation = NationStatesClone.Collections.nations.getOrFetch(id);
+      var currentNation = undefined;
+      var nationView = new NationStatesClone.Views.NationShow({
+        model: nation,
+        currentNation: currentNation
       });
       this._swapView(nationView);
     }
