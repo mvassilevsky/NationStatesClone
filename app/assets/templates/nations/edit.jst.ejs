@@ -1,0 +1,38 @@
+<% var nationName = nation.get('name') %>
+
+<div id="sidebar">
+  <strong><a href="" class="nation-link"><%= nationName %></a></strong><br>
+  <strong><a href="#/issues">Issues</a><br></strong>
+  <a href="#/nations">World</a><br>
+  <a href="" class="logout">Log Out</a>
+</div>
+
+<div id="main-new-nation">
+  <form>
+    <table>
+      <tr>
+        <td>Currency:</td>
+        <td>The</td>
+        <td><input type="text" name="nation[currency]"></td>
+      </tr>
+      <tr>
+        <td>National Animal:</td>
+        <td>The</td>
+        <td><input type="text" name="nation[animal]"></td>
+      </tr>
+      <tr>
+        <td>Motto:</td>
+        <td>"</td>
+        <td><input type="text" name="nation[motto]"></td>
+        <td>"</td>
+      </tr>
+      <tr>
+        <td>Leader Title:</td>
+        <td></td>
+        <td><input type="text" name="nation[leader_title]"></td>
+      </tr>
+    </table>
+
+    <input type="submit" value="Save Changes" class="save-changes">
+  </form>
+</div>

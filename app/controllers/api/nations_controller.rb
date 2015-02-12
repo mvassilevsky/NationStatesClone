@@ -14,6 +14,11 @@ module Api
       end
     end
 
+    def edit
+      @nation = Nation.find(params[:id])
+      render :edit
+    end
+
     def destroy
       sign_out
       redirect_to new_session_url

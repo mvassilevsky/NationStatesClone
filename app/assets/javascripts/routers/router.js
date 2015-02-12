@@ -60,7 +60,7 @@ NationStatesClone.Routers.Router = Backbone.Router.extend({
       var nation = NationStatesClone.Collections.nations.getOrFetch(
         NationStatesClone.CURRENT_NATION.nation
       );
-      var editView = NationStatesClone.Views.NationEdit({
+      var editView = new NationStatesClone.Views.NationEdit({
         model: nation
       });
       this._swapView(editView);
