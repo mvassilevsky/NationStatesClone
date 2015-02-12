@@ -2,7 +2,8 @@ NationStatesClone.Views.NationEdit = Backbone.View.extend({
   template: JST['nations/edit'],
 
   events: {
-    "click .logout": "logout"
+    "click .logout": "logout",
+    "submit form": "updateNation"
   },
 
   initialize: function () {
@@ -38,5 +39,17 @@ NationStatesClone.Views.NationEdit = Backbone.View.extend({
     $("input[name='nation[animal]']").val(this.model.get('animal'));
     $("input[name='nation[motto]']").val(this.model.get('motto'));
     $("input[name='nation[leader_title]']").val(this.model.get('leader_title'));
+  },
+
+  updateNation: function (event) {
+    event.preventDefault();
+    var attrs = $(event.currentTarget).serializeJSON();
+    var that = this;
+    this.model.save(attrs, {
+      success: function () {
+        NationStatesClone.Collections.nations.add(that.model, { merge: true });
+        Backbone.history.navigate("", { trigger: true });
+      }
+    });
   }
 });
