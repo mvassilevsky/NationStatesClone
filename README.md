@@ -2,7 +2,7 @@
 
 [Heroku link][heroku]
 
-[heroku]: https://gentle-gorge-8127.herokuapp.com/
+[heroku]: http://nationstatesclone.herokuapp.com/
 
 ## Minimum Viable Product
 NationStatesClone is a clone of the nation simulator NationStates, built with
