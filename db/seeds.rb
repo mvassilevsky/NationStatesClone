@@ -172,7 +172,7 @@ aliens1 = IssueOption.create(
 )
 aliens2 = IssueOption.create(
   issue_id: aliens.id,
-  body: "'Spies! It's gotta be spies! A few planes or satellites from our enemies or 'allies' in our region,' rages General Ripper, head of your military, 'The only way to keep those snoops out of our airspace is to patrol the streets 'n skies, and shoot 'em down! Even if they are some sort of little green aliens, a couple of SAM batteries and a few flak cannons'll keep 'em from abducting our cows.",
+  body: "'Spies! It's gotta be spies! A few planes or satellites from our enemies or 'allies' in our region,' rages General Ripper, head of your military, 'The only way to keep those snoops out of our airspace is to patrol the streets 'n skies, and shoot 'em down! Even if they are some sort of little green aliens, a couple of SAM batteries and a few flak cannons'll keep 'em from abducting our cows.'",
   ec_freedom: 0,
   soc_freedom: -1,
   pol_freedom: 0,
@@ -182,7 +182,7 @@ aliens2 = IssueOption.create(
 )
 aliens3 = IssueOption.create(
   issue_id: aliens.id,
-  body: "'Extraterrestrial lifeforms? Alien invaders? I don't know why we even have to listen to such idiocy!' complains a prize-winning physicist. 'In my opinion, the idea of 'aliens' on another planet is highly unlikely, and even if they did exist, getting from there to here is technically impossible! I say we forget this nonsense and stop wasting our budget on it. Leave this sort of foolishness to the people who attend those 'trekkie' conventions.",
+  body: "'Extraterrestrial lifeforms? Alien invaders? I don't know why we even have to listen to such idiocy!' complains a prize-winning physicist. 'In my opinion, the idea of 'aliens' on another planet is highly unlikely, and even if they did exist, getting from there to here is technically impossible! I say we forget this nonsense and stop wasting our budget on it. Leave this sort of foolishness to the people who attend those 'trekkie' conventions.'",
   ec_freedom: 0,
   soc_freedom: 0,
   pol_freedom: 0,
@@ -196,7 +196,7 @@ roads = Issue.create(
 )
 roads1 = IssueOption.create(
   issue_id: roads.id,
-  body: "'Similar schemes have been very effective elsewhere,' says your most infamous traffic warden. 'It's common sense that the best way to curb dangerously high demand is to raise the price of the supply - or, as in this case, to create a price. Charging citizens to go into more congested areas could, combined with the improvements to public transport it will finance, actually make people choose public transport over their cars. I don't see why people shouldn't pay tax for a little less traffic on our roads.",
+  body: "'Similar schemes have been very effective elsewhere,' says your most infamous traffic warden. 'It's common sense that the best way to curb dangerously high demand is to raise the price of the supply - or, as in this case, to create a price. Charging citizens to go into more congested areas could, combined with the improvements to public transport it will finance, actually make people choose public transport over their cars. I don't see why people shouldn't pay tax for a little less traffic on our roads.'",
   ec_freedom: -1,
   soc_freedom: 0,
   pol_freedom: 0,
@@ -274,7 +274,7 @@ big_brother2 = IssueOption.create(
 )
 big_brother3 = IssueOption.create(
   issue_id: big_brother.id,
-  body: "'While 'tis not my place,' says an Amish farmer, 'I just thought I'd mention that we Amish don't have any of this so-called 'cyber-crime'. Aye, 'tis a boring life, and plowin' gets old, but abolishing all of those computer-machines would certainly solve thy problems. Perhaps ye should just abandon phones and fax machines, too.",
+  body: "'While 'tis not my place,' says an Amish farmer, 'I just thought I'd mention that we Amish don't have any of this so-called 'cyber-crime'. Aye, 'tis a boring life, and plowin' gets old, but abolishing all of those computer-machines would certainly solve thy problems. Perhaps ye should just abandon phones and fax machines, too.'",
   ec_freedom: -30,
   soc_freedom: -10,
   pol_freedom: 0,
