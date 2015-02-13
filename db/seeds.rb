@@ -658,3 +658,21 @@ n2_curr_stat = NationStat.create(
   soc_freedom: 55,
   pol_freedom: 0
 )
+n5_curr_stat = NationStat.create(
+  nation_id: n5.id,
+  ec_freedom: 45,
+  soc_freedom: 50,
+  pol_freedom: 40
+)
+n5_none_of_the_above1_ni = NationIssue.create(
+  nation_id: n5.id,
+  issue_id: none_of_the_above.id,
+  resolved: true,
+  chosen_option_id: none_of_the_above1.id
+)
+n5_none_of_the_above1_stat = NationStat.create(
+  nation_id: n5.id,
+  ec_freedom: 45,
+  soc_freedom: 50,
+  pol_freedom: 55
+)

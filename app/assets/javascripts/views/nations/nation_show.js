@@ -52,7 +52,6 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
     var soc_freedoms = [];
     var ec_freedoms = [];
     var pol_freedoms = [];
-    debugger;
     this.model.get('last_few_stats').forEach(function (stat) {
       soc_freedoms.push(stat.soc_freedom)
       ec_freedoms.push(stat.ec_freedom)
