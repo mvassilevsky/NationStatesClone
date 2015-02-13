@@ -472,7 +472,7 @@ speech3 = IssueOption.create(
   ecosystem: 0,
   result_txt: "the government is promoting multicultural values with the new 'Just Be Nice, OK?' initiative"
 )
-none_of_the_above = Issue.new(
+none_of_the_above = Issue.create(
   title: "Vote For 'None of the Above'?",
   body: "A loose coalition of political activists running the gamut of the political spectrum has started a petition to add 'None of the Above' as an option on every ballot, so that a voter can reject all candidates if he feels none of them represent a viable option. If 'None of the Above' wins the election, a new election with all-new candidates would have to be held."
 )
