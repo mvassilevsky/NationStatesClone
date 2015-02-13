@@ -60,7 +60,11 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
     var labels = [];
     var num_stats = this.model.get('last_few_stats').length
     for (var i = 0; i < num_stats; i++) {
-      labels.push("");
+      if (i === (num_stats - 1) && (num_stats > 1)) {
+        labels.push("now");
+      } else {
+        labels.push("")
+      }
     }
     return {
         labels: labels,
