@@ -182,7 +182,7 @@ aliens2 = IssueOption.create(
 )
 aliens3 = IssueOption.create(
   issue_id: aliens.id,
-  body: "Extraterrestrial lifeforms? Alien invaders? I don't know why we even have to listen to such idiocy!' complains a prize-winning physicist. 'In my opinion, the idea of 'aliens' on another planet is highly unlikely, and even if they did exist, getting from there to here is technically impossible! I say we forget this nonsense and stop wasting our budget on it. Leave this sort of foolishness to the people who attend those 'trekkie' conventions.",
+  body: "'Extraterrestrial lifeforms? Alien invaders? I don't know why we even have to listen to such idiocy!' complains a prize-winning physicist. 'In my opinion, the idea of 'aliens' on another planet is highly unlikely, and even if they did exist, getting from there to here is technically impossible! I say we forget this nonsense and stop wasting our budget on it. Leave this sort of foolishness to the people who attend those 'trekkie' conventions.",
   ec_freedom: 0,
   soc_freedom: 0,
   pol_freedom: 0,
@@ -342,7 +342,7 @@ video_games1 = IssueOption.create(
 )
 video_games2 = IssueOption.create(
   issue_id: video_games.id,
-  body: "'Oh noez!' cries xXxDEATMASTERxXx one of the foremost authorities on video games. 'That's stupid! If a child is psychotic, it's not because they played 'Hellstorm of Fireblood 3' or whatever, it's because their parents were stupid enough to not teach little Johnny the difference between right and wrong and don't want to take the blame. Just because I like to n00k countries in games doesn't mean I like to shoot people in real life. That's false data! So just relax and let the kids play their games, hey?'",
+  body: "'O noez!' cries xXxDEATMASTERxXx one of the foremost authorities on video games. 'That's stupid! If a child is psychotic, it's not because they played 'Hellstorm of Fireblood 3' or whatever, it's because their parents were stupid enough to not teach little Johnny the difference between right and wrong and don't want to take the blame. Just because I like to n00k countries in games doesn't mean I like to shoot people in real life. That's false data! So just relax and let the kids play their games, hey?'",
   ec_freedom: 10,
   soc_freedom: 10,
   pol_freedom: 0,
