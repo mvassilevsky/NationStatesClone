@@ -13,7 +13,6 @@ class CreateNations < ActiveRecord::Migration
       t.string :leader_title, null: false
       t.string :motto
       t.string :recent_issues
-      t.string :flag_url
 
       t.timestamps
     end

@@ -474,7 +474,7 @@ class Nation < ActiveRecord::Base
   end
 
   def last_few_nation_issues(num_issues)
-    NationIssue.order("updated_at DESC").where(nation_id: self.id, resolved: true).last(num_issues)
+    NationIssue.where(nation_id: self.id, resolved: true).order("id ASC").last(num_issues)
   end
 
   def last_few_stats

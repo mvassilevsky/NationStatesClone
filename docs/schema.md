@@ -17,7 +17,6 @@ leader_title   | string    | not null
 tax_rate       | integer   | not null
 ecosystem      | integer   | not null
 motto          | string    |
-flag_url       | string    |
 
 ## nation_issues
 column name | data type | details

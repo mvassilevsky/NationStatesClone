@@ -11,20 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150212005226) do
+ActiveRecord::Schema.define(version: 20150213183905) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "issue_options", force: true do |t|
     t.integer  "issue_id",    null: false
-    t.string   "body",        null: false
+    t.text     "body",        null: false
     t.integer  "ec_freedom",  null: false
     t.integer  "soc_freedom", null: false
     t.integer  "pol_freedom", null: false
     t.integer  "tax_rate",    null: false
     t.integer  "ecosystem",   null: false
-    t.string   "result_txt",  null: false
+    t.text     "result_txt",  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20150212005226) do
 
   create_table "issues", force: true do |t|
     t.string   "title",      null: false
-    t.string   "body",       null: false
+    t.text     "body",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -73,7 +73,6 @@ ActiveRecord::Schema.define(version: 20150212005226) do
     t.integer  "population",      limit: 8, null: false
     t.string   "leader_title",              null: false
     t.string   "motto"
-    t.string   "flag_url"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "tax_rate",                  null: false
