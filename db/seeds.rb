@@ -404,7 +404,7 @@ name3 = IssueOption.create(
   ecosystem: 0,
   result_txt: "all citizens are solely referenced by their allocated identity number"
 )
-taxes = Issue.new(
+taxes = Issue.create(
   title: "Taxpayers On Strike",
   body: "The latest budget reports have marked a steady decline in the government's monthly revenues. A study initiated by your treasurers has revealed that many of your nation's citizens are not paying their taxes."
 )
