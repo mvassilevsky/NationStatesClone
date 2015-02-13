@@ -370,3 +370,8 @@ video_games4 = IssueOption.create(
   ecosystem: 0,
   result_txt: "students everywhere have been despairing after the recent ban on video games"
 )
+name = Issue.create(
+  title: "What's In A Name?",
+  body: "A man by the name of &%*@# Smith hit the headlines yesterday when he had his first name legally changed to 'John', citing the ridicule and stress he suffered because of his given name. Mr Smith publicly commented afterwards that there should be more restrictions on what parents can name their children."
+)
+name
