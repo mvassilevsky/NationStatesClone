@@ -22,6 +22,7 @@ class NationsController < ApplicationController
         soc_freedom: current_nation.soc_freedom,
         pol_freedom: current_nation.pol_freedom
         })
+      get_issues
       redirect_to root_url
     else
       flash.now[:errors] = @nation.errors.full_messages
@@ -38,5 +39,15 @@ class NationsController < ApplicationController
 
   def ideology_params
     params.require(:ideology).permit(:q1, :q2, :q3, :q4, :q5, :q6)
+  end
+
+  def get_issues
+    issue_ids = Issue.pluck(:id).sample(2)
+    issue_ids.each do |issue_id|
+      nation_issue = NationIssue.new
+      nation_issue.nation_id = @nation.id
+      nation_issue.issue_id = issue_id
+      nation_issue.save
+    end
   end
 end

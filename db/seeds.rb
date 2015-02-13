@@ -178,7 +178,7 @@ aliens2 = IssueOption.create(
   pol_freedom: 0,
   tax_rate: 2,
   ecosystem: 0,
-  result_txt: "the military is on high alert against children's balloons originating in your neighbors' territory"
+  result_txt: "the military is on high alert against children's balloons originating in its neighbors' territory"
 )
 aliens3 = IssueOption.create(
   issue_id: aliens.id,
@@ -597,4 +597,64 @@ mes4 = IssueOption.create(
   tax_rate: 0,
   ecosystem: 0,
   result_txt: "the government is centralizing power and cracking down on dissidents"
+)
+n1_aliens2_ni = NationIssue.create(
+  nation_id: n1.id,
+  issue_id: aliens.id,
+  resolved: true,
+  chosen_option_id: aliens2.id
+)
+n1_roads1_ni = NationIssue.create(
+  nation_id: n1.id,
+  issue_id: roads.id,
+  resolved: true,
+  chosen_option_id: roads1.id
+)
+n1_roads1_stat = NationStat.create(
+  nation_id: n1.id,
+  ec_freedom: 21,
+  soc_freedom: 31,
+  pol_freedom: 40
+)
+n1_aliens2_stat = NationStat.create(
+  nation_id: n1.id,
+  ec_freedom: 20,
+  soc_freedom: 31,
+  pol_freedom: 40
+)
+n1_curr_stat = NationStat.create(
+  nation_id: n1.id,
+  ec_freedom: 20,
+  soc_freedom: 30,
+  pol_freedom: 40
+)
+n2_aliens2_ni = NationIssue.create(
+  nation_id: n2.id,
+  issue_id: aliens.id,
+  resolved: true,
+  chosen_option_id: aliens2.id
+)
+n2_greenbelt2_stat = NationStat.create(
+  nation_id: n2.id,
+  ec_freedom: 60,
+  soc_freedom: 66,
+  pol_freedom: 0
+)
+n2_aliens2_stat = NationStat.create(
+  nation_id: n2.id,
+  ec_freedom: 50,
+  soc_freedom: 56,
+  pol_freedom: 0
+)
+n2_greenbelt2_ni = NationIssue.create(
+  nation_id: n2.id,
+  issue_id: greenbelt.id,
+  resolved: true,
+  chosen_option_id: greenbelt2.id
+)
+n2_curr_stat = NationStat.create(
+  nation_id: n2.id,
+  ec_freedom: 50,
+  soc_freedom: 55,
+  pol_freedom: 0
 )

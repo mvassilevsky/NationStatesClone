@@ -52,6 +52,7 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
     var soc_freedoms = [];
     var ec_freedoms = [];
     var pol_freedoms = [];
+    debugger;
     this.model.get('last_few_stats').forEach(function (stat) {
       soc_freedoms.push(stat.soc_freedom)
       ec_freedoms.push(stat.ec_freedom)
@@ -60,11 +61,7 @@ NationStatesClone.Views.NationShow = Backbone.View.extend({
     var labels = [];
     var num_stats = this.model.get('last_few_stats').length
     for (var i = 0; i < num_stats; i++) {
-      if (i === (num_stats - 1)) {
-        labels.push("now");
-      } else {
-        labels.push("")
-      }
+      labels.push("");
     }
     return {
         labels: labels,

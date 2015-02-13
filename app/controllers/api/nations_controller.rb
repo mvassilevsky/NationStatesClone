@@ -30,7 +30,7 @@ module Api
 
     def get_issues
       nation_id = current_nation.id
-      issue_ids = Issue.pluck(:id).sample(3)
+      issue_ids = Issue.pluck(:id).sample(2)
       issue_ids.each do |issue_id|
         nation_issue = NationIssue.new
         nation_issue.nation_id = nation_id
