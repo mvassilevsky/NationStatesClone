@@ -12,22 +12,7 @@ class NationsController < ApplicationController
     ideology_stats = IdeologyParser.new(ideology_params).parse
     nation_parameters.merge!(ideology_stats)
     nation_parameters.merge!(beginning_parameters)
-    @nation = Nation.new(nation_parameters)
-    @questions = IdeologyParser.questions
-    if @nation.save
-      sign_in!(@nation)
-      NationStat.create({
-        nation_id: current_nation.id,
-        ec_freedom: current_nation.ec_freedom,
-        soc_freedom: current_nation.soc_freedom,
-        pol_freedom: current_nation.pol_freedom
-        })
-      get_issues
-      redirect_to root_url
-    else
-      flash.now[:errors] = @nation.errors.full_messages
-      render :new
-    end
+    nation_create(nation_parameters)
   end
 
   def guest_create
@@ -46,22 +31,7 @@ class NationsController < ApplicationController
       leader_title: "Glorious Guest",
       motto: "All is temporary; I will be destroyed upon logout."
     }
-    @nation = Nation.new(nation_parameters)
-    @questions = IdeologyParser.questions
-    if @nation.save
-      sign_in!(@nation)
-      NationStat.create({
-        nation_id: current_nation.id,
-        ec_freedom: current_nation.ec_freedom,
-        soc_freedom: current_nation.soc_freedom,
-        pol_freedom: current_nation.pol_freedom
-        })
-      get_issues
-      redirect_to root_url
-    else
-      flash.now[:errors] = @nation.errors.full_messages
-      render :new
-    end
+    nation_create(nation_parameters)
   end
 
   private
@@ -82,6 +52,25 @@ class NationsController < ApplicationController
       nation_issue.nation_id = @nation.id
       nation_issue.issue_id = issue_id
       nation_issue.save
+    end
+  end
+
+  def nation_create(nation_parameters)
+    @nation = Nation.new(nation_parameters)
+    @questions = IdeologyParser.questions
+    if @nation.save
+      sign_in!(@nation)
+      NationStat.create({
+        nation_id: current_nation.id,
+        ec_freedom: current_nation.ec_freedom,
+        soc_freedom: current_nation.soc_freedom,
+        pol_freedom: current_nation.pol_freedom
+        })
+      get_issues
+      redirect_to root_url
+    else
+      flash.now[:errors] = @nation.errors.full_messages
+      render :new
     end
   end
 end
