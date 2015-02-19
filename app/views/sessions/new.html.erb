@@ -11,6 +11,9 @@
       <input type="password" name="nation[password]" value=""><br>
     </label>
     <input type="submit" value="Log In" class="log-in">
-  </form><br>
-  <%= link_to "Create New Nation", new_nation_url %>
+  </form>
+  <form action="/session" method="post">
+    <input type="submit" value="Guest Nation" class="guest-nation"><br><br>
+  </form>
+  <%= button_to "Create New Nation", new_nation_url, method: :get %>
 </div>
