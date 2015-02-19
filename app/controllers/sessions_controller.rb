@@ -19,8 +19,19 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    sign_out
-    redirect_to new_session_url
+    if current_nation.name == "Guestland"
+      current_nation.nation_issues.each do |nation_issue|
+        nation_issue.destroy
+      end
+      current_nation.nation_stats.each do |nation_stat|
+        nation_stat.destroy
+      end
+      current_nation.destroy
+      session[:session_token] = nil
+    else
+      sign_out
+      redirect_to new_session_url
+    end
   end
 
 end

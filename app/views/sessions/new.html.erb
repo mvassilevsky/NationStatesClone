@@ -12,7 +12,8 @@
     </label>
     <input type="submit" value="Log In" class="log-in">
   </form>
-  <form action="/session" method="post">
+  <form action="/nations/create/guest" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     <input type="submit" value="Guest Nation" class="guest-nation"><br><br>
   </form>
   <%= button_to "Create New Nation", new_nation_url, method: :get %>

@@ -30,6 +30,40 @@ class NationsController < ApplicationController
     end
   end
 
+  def guest_create
+    nation_parameters = {
+      name: "Guestland",
+      password_digest: "-",
+      session_token: "-",
+      ec_freedom: 50,
+      soc_freedom: 50,
+      pol_freedom: 50,
+      tax_rate: 35,
+      ecosystem: 50,
+      currency: "Guest Dollar",
+      animal: "friendly dog",
+      population: 1000000,
+      leader_title: "Glorious Guest",
+      motto: "All is temporary; I will be destroyed upon logout."
+    }
+    @nation = Nation.new(nation_parameters)
+    @questions = IdeologyParser.questions
+    if @nation.save
+      sign_in!(@nation)
+      NationStat.create({
+        nation_id: current_nation.id,
+        ec_freedom: current_nation.ec_freedom,
+        soc_freedom: current_nation.soc_freedom,
+        pol_freedom: current_nation.pol_freedom
+        })
+      get_issues
+      redirect_to root_url
+    else
+      flash.now[:errors] = @nation.errors.full_messages
+      render :new
+    end
+  end
+
   private
   def nation_params
     params.require(:nation).permit(:name, :password, :currency, :animal,
