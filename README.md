@@ -18,6 +18,7 @@ and see how their nation has been affected by their choices.
 - IssueOption - stores the effects of an option of an issue
 - NationIssue - links nations to issues
 - NationStat - stores a nation's historical stats
+
 #### Controllers
 - ApplicationController - handles signing in, logging out, and getting the current nation
 - NationsController - creates a new nation and gets issues for it
