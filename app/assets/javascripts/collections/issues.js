@@ -1,6 +1,5 @@
 NationStatesClone.Collections.Issues = Backbone.Collection.extend({
   model: NationStatesClone.Models.Issue,
-
   url: 'api/issues',
 
   getOrFetch: function (id) {
@@ -22,7 +21,6 @@ NationStatesClone.Collections.Issues = Backbone.Collection.extend({
   parse: function (response) {
     return response.issues;
   }
-
 
 });
 

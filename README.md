@@ -39,3 +39,23 @@ A clone of the online nation simulator [NationStates][nationstates], built with 
 - API Nations Edit - sends a nation's attributes for the edit page
 - API Nations Index - sends each nation's attributes for the World (nation index) page
 - API Nations Show - sends a nation's attributes for the index page
+
+### Backbone.js
+
+#### Collections
+- Nations - overrides parse to extract nations from the response
+- Issues - overrides parse to extract issues from the response
+
+#### Models
+- Nation
+- Issue
+
+#### Views
+- IssueIndex - displays a nation's issues
+- IssueShow - displays a specific issue and its options
+- NationsIndex - displays the World page
+- NationShow - displays the nation's stats and description
+- NationEdit - allows editing the logged-in nation's 
+
+#### Router
+- Router - routes to show the View pages
