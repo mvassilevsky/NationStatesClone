@@ -29,5 +29,27 @@
 <script>
   <% if !!defined?(current_nation.id) %>
     NationStatesClone.CURRENT_NATION = { nation: "<%= current_nation.id %>" };
+
+    var nation = NationStatesClone.Collections.nations.getOrFetch(
+      NationStatesClone.CURRENT_NATION.nation
+    );
+    window.onbeforeunload = function() { logoutIfGuest(); }
+
+    function logoutIfGuest() {
+      if (nation.attributes.name == "Guestland") {
+        event.preventDefault();
+        $.ajax({
+          url: "/session",
+          dataType: "json",
+          method: "DELETE",
+          success: function (response) {
+            window.location = '';
+          },
+          error: function (response) {
+            window.location = '';
+          }
+        });
+      }
+    }
   <% end %>
 </script>

@@ -14,7 +14,8 @@ class SessionsController < ApplicationController
       redirect_to root_url
     else
       flash.now[:errors] = ["Nonexistent nation or incorrect password"]
-      render :new
+      flash.keep
+      redirect_to root_path
     end
   end
 
