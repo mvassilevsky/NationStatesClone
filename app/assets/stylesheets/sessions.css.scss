@@ -13,7 +13,6 @@
   top: 52px;
   height: 100%;
   color: green;
-  background-color: #EEEEE0;
   font-size: 12px;
   word-wrap: break-word;
   padding-left: 5px;
@@ -136,9 +135,7 @@ input[type="submit"], .submit {
 }
 
 .footer {
-  margin: 0 0 0 180px;
-  position: absolute;
-  bottom: 0px;
+  margin-left: 0 0 0 180px;
 }
 
 .errors {
