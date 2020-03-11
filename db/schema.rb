@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150213183905) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "issue_options", force: true do |t|
+  create_table "issue_options", force: :cascade do |t|
     t.integer  "issue_id",    null: false
     t.text     "body",        null: false
     t.integer  "ec_freedom",  null: false
@@ -31,14 +31,14 @@ ActiveRecord::Schema.define(version: 20150213183905) do
 
   add_index "issue_options", ["issue_id"], name: "index_issue_options_on_issue_id", using: :btree
 
-  create_table "issues", force: true do |t|
+  create_table "issues", force: :cascade do |t|
     t.string   "title",      null: false
     t.text     "body",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "nation_issues", force: true do |t|
+  create_table "nation_issues", force: :cascade do |t|
     t.integer  "nation_id",                        null: false
     t.integer  "issue_id",                         null: false
     t.datetime "created_at"
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 20150213183905) do
   add_index "nation_issues", ["issue_id"], name: "index_nation_issues_on_issue_id", using: :btree
   add_index "nation_issues", ["nation_id"], name: "index_nation_issues_on_nation_id", using: :btree
 
-  create_table "nation_stats", force: true do |t|
+  create_table "nation_stats", force: :cascade do |t|
     t.integer  "nation_id",   null: false
     t.integer  "ec_freedom",  null: false
     t.integer  "soc_freedom", null: false
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20150213183905) do
 
   add_index "nation_stats", ["nation_id"], name: "index_nation_stats_on_nation_id", using: :btree
 
-  create_table "nations", force: true do |t|
+  create_table "nations", force: :cascade do |t|
     t.string   "name",                      null: false
     t.string   "password_digest",           null: false
     t.string   "session_token",             null: false

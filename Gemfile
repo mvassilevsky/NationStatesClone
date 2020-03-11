@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.6.5'
 
-gem 'chart-js-rails'
+gem 'chart-js-rails', '0.0.8'
 gem 'backbone-on-rails'
 gem 'newrelic_rpm'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.2.11.1'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.18'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -28,6 +28,8 @@ gem 'jquery-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
+
+gem 'json', '1.8.5'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
