@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'chart-js-rails'
 gem 'backbone-on-rails'
 gem 'newrelic_rpm'
