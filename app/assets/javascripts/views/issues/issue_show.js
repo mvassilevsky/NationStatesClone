@@ -22,6 +22,7 @@ NationStatesClone.Views.IssueShow = Backbone.View.extend({
 
   logout: function (event) {
     event.preventDefault();
+    window.onbeforeunload = null;
     $.ajax({
       url: "/session",
       dataType: "json",
