@@ -31,8 +31,8 @@ class SessionsController < ApplicationController
       session[:session_token] = nil
     else
       sign_out
-      redirect_to new_session_url
     end
+    redirect_to new_session_url
   end
 
 end
