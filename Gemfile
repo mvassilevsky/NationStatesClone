@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-ruby '2.6.5'
+ruby '2.7'
 
 gem 'chart-js-rails', '0.0.8'
-gem 'backbone-on-rails'
+gem 'backbone-on-rails', git: 'https://github.com/meleyal/backbone-on-rails'
 gem 'newrelic_rpm'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11.1'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
+gem 'pg', '1.2.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'json', '1.8.5'
 
+gem 'bigdecimal', '1.3.5'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -38,6 +40,8 @@ end
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 group :development do
   gem 'byebug'
