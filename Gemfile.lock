@@ -188,6 +188,7 @@ DEPENDENCIES
   better_errors
   bigdecimal (= 1.3.5)
   binding_of_caller
+  bundler (= 1.17.3)
   byebug
   chart-js-rails (= 0.0.8)
   coffee-rails (~> 4.0.0)
