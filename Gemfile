@@ -29,7 +29,7 @@ gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'json', '1.8.5'
+gem 'json', '2.3.0'
 
 gem 'bigdecimal', '1.3.5'
 
