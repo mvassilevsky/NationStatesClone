@@ -63,7 +63,8 @@ class Nation < ActiveRecord::Base
     nation
   end
 
-  def initialize(nation_parameters = {})
+  def initialize(nation_parameters)
+    nation_parameters = {} if nation_parameters.nil?
     if nation_parameters != {}
       adjust_params!(nation_parameters)
     end
@@ -71,6 +72,7 @@ class Nation < ActiveRecord::Base
   end
 
   def update_attributes(nation_parameters = {})
+    nation_parameters = {} if nation_parameters.nil?
     if nation_parameters != {}
       adjust_params!(nation_parameters)
     end

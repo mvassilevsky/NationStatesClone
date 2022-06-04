@@ -15,7 +15,8 @@ module Kernel
     gem_without_pg_fix(dep, *reqs)
   end
 
-  alias_method_chain :gem, :pg_fix
+  alias_method :gem_without_pg_fix, :gem
+  alias_method :gem, :gem_with_pg_fix
 end
 # pg 1.0 gem has removed these constants, but 4.2 ActiveRecord still expects them
 PGconn   = PG::Connection

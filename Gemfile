@@ -6,19 +6,19 @@ gem 'chart-js-rails', '0.0.8'
 gem 'backbone-on-rails', git: 'https://github.com/meleyal/backbone-on-rails'
 gem 'newrelic_rpm'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.11.1'
+gem 'rails', '5.2'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '1.2.3'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -27,9 +27,9 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 
-gem 'json', '1.8.5'
+gem 'json'
 
 gem 'bigdecimal', '1.3.5'
 
