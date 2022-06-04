@@ -38,13 +38,13 @@ class NationsController < ApplicationController
 
   private
   def nation_params
-    params.permit(:nation).permit(:name, :password, :currency, :animal,
-                                   :population, :leader_title, :motto,
-                                   :recent_issues, :flag_url)
+    params.fetch(:nation, {}).permit(:name, :password, :currency, :animal,
+                                     :population, :leader_title, :motto,
+                                     :recent_issues, :flag_url)
   end
 
   def ideology_params
-    params.permit(:ideology).permit(:q1, :q2, :q3, :q4, :q5, :q6)
+    params.fetch(:ideology, {}).permit(:q1, :q2, :q3, :q4, :q5, :q6)
   end
 
   def get_issues
