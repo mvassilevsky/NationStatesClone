@@ -16,6 +16,8 @@ class NationsController < ApplicationController
   end
 
   def guest_create
+    guestland = Nation.find_by_name('Guestland')
+    guestland.destroy if guestland
     nation_parameters = {
       name: "Guestland",
       password_digest: "-",
